@@ -1,0 +1,1940 @@
+@prefix : <http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#> .
+
+<http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr> rdf:type owl:Ontology ;
+                                                          <http://purl.org/dc/terms/creator> "Estudiante UOC – PEC2 Representación del Conocimiento" ;
+                                                          <http://purl.org/dc/terms/description> "Ontología semántica para el catálogo europeo de dispositivos médicos de alto riesgo (MDR, Regulation EU 2017/745) y de dispositivos de diagnóstico in vitro (IVDR, Regulation EU 2017/746). Modela dispositivos, fabricantes, clases de riesgo, riesgos identificados según IMDRF, incidentes notificados y acciones correctivas de seguridad en campo (FSCA) tal y como se registran en la base de datos EUDAMED."@es ;
+                                                          <http://purl.org/dc/terms/issued> "2026-04-15"^^xsd:date ;
+                                                          <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                                                          <http://purl.org/dc/terms/title> "EUDAMED MDR/IVDR Device Catalogue Ontology"@en ;
+                                                          rdfs:comment "Ontology IRI: http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr"@en ;
+                                                          owl:versionInfo "0.1.0" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#affects
+:affects rdf:type owl:ObjectProperty ,
+                  owl:FunctionalProperty ;
+         rdfs:domain :Incident ;
+         rdfs:range :MedicalDevice ;
+         rdfs:comment "Dispositivo concreto al que se refiere un incidente."@en ;
+         rdfs:label "affects"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasCorrectiveAction
+:hasCorrectiveAction rdf:type owl:ObjectProperty ;
+                     rdfs:domain :Incident ;
+                     rdfs:range :CorrectiveAction ;
+                     rdfs:comment "FSCA derivada de un incidente."@en ;
+                     rdfs:label "has corrective action"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasIdentifiedRisk
+:hasIdentifiedRisk rdf:type owl:ObjectProperty ;
+                   rdfs:domain :MedicalDevice ;
+                   rdfs:range :Risk ;
+                   rdfs:comment "Riesgo identificado que afecta a un dispositivo o a su tipología."@en ;
+                   rdfs:label "has identified risk"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasManufacturer
+:hasManufacturer rdf:type owl:ObjectProperty ,
+                          owl:FunctionalProperty ;
+                 rdfs:domain :MedicalDevice ;
+                 rdfs:range :Manufacturer ;
+                 rdfs:comment "Relaciona un dispositivo con su fabricante legal. Es funcional: un dispositivo tiene un único fabricante registrado."@en ;
+                 rdfs:label "has manufacturer"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasRiskClass
+:hasRiskClass rdf:type owl:ObjectProperty ,
+                       owl:FunctionalProperty ;
+              rdfs:domain :MedicalDevice ;
+              rdfs:range :RiskClass ;
+              rdfs:comment "Clase de riesgo asignada al dispositivo (una y solo una conforme al MDR o IVDR)."@en ;
+              rdfs:label "has risk class"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#locatedInCountry
+:locatedInCountry rdf:type owl:ObjectProperty ,
+                           owl:FunctionalProperty ;
+                  rdfs:domain :Manufacturer ;
+                  rdfs:range :Country ;
+                  rdfs:comment "País en el que tiene sede legal el fabricante."@en ;
+                  rdfs:label "located in country"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#manufacturesDevice
+:manufacturesDevice rdf:type owl:ObjectProperty ;
+                    owl:inverseOf :hasManufacturer ;
+                    rdfs:domain :Manufacturer ;
+                    rdfs:range :MedicalDevice ;
+                    rdfs:comment "Inversa de hasManufacturer."@en ;
+                    rdfs:label "manufactures device"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#regulatedBy
+:regulatedBy rdf:type owl:ObjectProperty ,
+                      owl:FunctionalProperty ;
+             rdfs:domain :MedicalDevice ;
+             rdfs:range :RegulatoryFramework ;
+             rdfs:comment "Marco regulatorio bajo el que se clasifica el dispositivo (MDR o IVDR)."@en ;
+             rdfs:label "regulated by"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#reportedInCountry
+:reportedInCountry rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Incident ;
+                   rdfs:range :Country ;
+                   rdfs:comment "Estado miembro en el que se notifica el incidente."@en ;
+                   rdfs:label "reported in country"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#supervisedBy
+:supervisedBy rdf:type owl:ObjectProperty ,
+                       owl:FunctionalProperty ;
+              rdfs:domain :Manufacturer ;
+              rdfs:range :CompetentAuthority ;
+              rdfs:comment "Autoridad competente del Estado miembro bajo cuya supervisión opera el fabricante."@en ;
+              rdfs:label "supervised by"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#triggeredBy
+:triggeredBy rdf:type owl:ObjectProperty ;
+             rdfs:domain :Incident ;
+             rdfs:range :Risk ;
+             rdfs:comment "Riesgo identificado que materializa el incidente."@en ;
+             rdfs:label "triggered by"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#actionDate
+:actionDate rdf:type owl:DatatypeProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:domain :CorrectiveAction ;
+            rdfs:range xsd:date ;
+            rdfs:comment "Fecha en la que se inicia la FSCA."@en ;
+            rdfs:label "action date"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#authorizationNumber
+:authorizationNumber rdf:type owl:DatatypeProperty ,
+                              owl:FunctionalProperty ;
+                     rdfs:domain :Manufacturer ;
+                     rdfs:range xsd:string ;
+                     rdfs:comment "Número de autorización asignado al fabricante por la autoridad competente."@en ;
+                     rdfs:label "authorization number"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#closureDate
+:closureDate rdf:type owl:DatatypeProperty ,
+                      owl:FunctionalProperty ;
+             rdfs:domain :CorrectiveAction ;
+             rdfs:range xsd:date ;
+             rdfs:comment "Fecha de cierre de la FSCA (si procede)."@en ;
+             rdfs:label "closure date"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#contactEmail
+:contactEmail rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Manufacturer ;
+              rdfs:range xsd:string ;
+              rdfs:comment "Correo de contacto regulatorio del fabricante."@en ;
+              rdfs:label "contact email"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#deviceName
+:deviceName rdf:type owl:DatatypeProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:domain :MedicalDevice ;
+            rdfs:range xsd:string ;
+            rdfs:comment "Nombre comercial del dispositivo tal y como aparece en EUDAMED."@en ;
+            rdfs:label "device name"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#devicesAffected
+:devicesAffected rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :CorrectiveAction ;
+                 rdfs:range xsd:string ;
+                 rdfs:comment "Número (aproximado) de dispositivos alcanzados por la FSCA."@en ;
+                 rdfs:label "devices affected"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#eudamedSRN
+:eudamedSRN rdf:type owl:DatatypeProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:domain :Manufacturer ;
+            rdfs:range xsd:string ;
+            rdfs:comment "Single Registration Number de EUDAMED asignado al fabricante."@en ;
+            rdfs:label "EUDAMED SRN"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#eventDate
+:eventDate rdf:type owl:DatatypeProperty ,
+                    owl:FunctionalProperty ;
+           rdfs:domain :Incident ;
+           rdfs:range xsd:date ;
+           rdfs:comment "Fecha en la que tuvo lugar el evento adverso."@en ;
+           rdfs:label "event date"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#fscaStatus
+:fscaStatus rdf:type owl:DatatypeProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:domain :CorrectiveAction ;
+            rdfs:range xsd:string ;
+            rdfs:comment "Estado de la acción correctiva (Open, Closed)."@en ;
+            rdfs:label "FSCA status"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#imdrfCode
+:imdrfCode rdf:type owl:DatatypeProperty ,
+                    owl:FunctionalProperty ;
+           rdfs:domain :Risk ;
+           rdfs:range xsd:string ;
+           rdfs:comment "Código IMDRF Adverse Event Terminology que identifica el riesgo."@en ;
+           rdfs:label "IMDRF code"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#incidentDescription
+:incidentDescription rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :Incident ;
+                     rdfs:range xsd:string ;
+                     rdfs:comment "Descripción clínica del incidente."@en ;
+                     rdfs:label "incident description"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#intendedPurpose
+:intendedPurpose rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :MedicalDevice ;
+                 rdfs:range xsd:string ;
+                 rdfs:comment "Finalidad prevista declarada por el fabricante."@en ;
+                 rdfs:label "intended purpose"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isActive
+:isActive rdf:type owl:DatatypeProperty ,
+                   owl:FunctionalProperty ;
+          rdfs:domain :MedicalDevice ;
+          rdfs:range xsd:boolean ;
+          rdfs:comment "Valor booleano que indica si el dispositivo es activo (requiere fuente de energía externa)."@en ;
+          rdfs:label "is active"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isImplantable
+:isImplantable rdf:type owl:DatatypeProperty ,
+                        owl:FunctionalProperty ;
+               rdfs:domain :MedicalDevice ;
+               rdfs:range xsd:boolean ;
+               rdfs:comment "Valor booleano que indica si el dispositivo es implantable."@en ;
+               rdfs:label "is implantable"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isIvd
+:isIvd rdf:type owl:DatatypeProperty ,
+                owl:FunctionalProperty ;
+       rdfs:domain :MedicalDevice ;
+       rdfs:range xsd:boolean ;
+       rdfs:comment "Valor booleano que indica si el dispositivo es de diagnóstico in vitro."@en ;
+       rdfs:label "is IVD"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isReusable
+:isReusable rdf:type owl:DatatypeProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:domain :MedicalDevice ;
+            rdfs:range xsd:boolean ;
+            rdfs:comment "Valor booleano que indica si el dispositivo se utiliza en más de un paciente o procedimiento."@en ;
+            rdfs:label "is reusable"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#probability
+:probability rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Risk ;
+             rdfs:range xsd:string ;
+             rdfs:comment "Probabilidad estimada de materialización del riesgo (Low, Medium, High)."@en ;
+             rdfs:label "probability"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#reportDate
+:reportDate rdf:type owl:DatatypeProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:domain :Incident ;
+            rdfs:range xsd:date ;
+            rdfs:comment "Fecha en la que el incidente fue notificado a la autoridad competente."@en ;
+            rdfs:label "report date"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#severity
+:severity rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Risk ;
+          rdfs:range xsd:string ;
+          rdfs:comment "Gravedad del riesgo (Moderate, Serious, Critical)."@en ;
+          rdfs:label "severity"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#udiDi
+:udiDi rdf:type owl:DatatypeProperty ,
+                owl:FunctionalProperty ;
+       rdfs:domain :MedicalDevice ;
+       rdfs:range xsd:string ;
+       rdfs:comment "Unique Device Identifier – Device Identifier (GS1 AI 01). Es único e inmutable para el modelo de dispositivo."@en ;
+       rdfs:label "UDI-DI"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ActiveDevice
+:ActiveDevice rdf:type owl:Class ;
+              rdfs:subClassOf :MedicalDevice ;
+              rdfs:comment "Dispositivo médico que depende de una fuente de energía distinta de la generada directamente por el cuerpo humano o la gravedad."@en ;
+              rdfs:label "Active Device"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ActiveImplant
+:ActiveImplant rdf:type owl:Class ;
+               rdfs:subClassOf :ImplantableActiveDevice ;
+               rdfs:comment "Implante activo en el sentido del MDR, anexo VIII regla 8: dispositivo activo destinado a introducirse total o parcialmente en el cuerpo humano y permanecer tras la intervención."@en ;
+               rdfs:label "Active Implant"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#CompetentAuthority
+:CompetentAuthority rdf:type owl:Class ;
+                    rdfs:subClassOf :RegulatedEntity ;
+                    rdfs:comment "Autoridad nacional responsable de la supervisión de los dispositivos médicos comercializados en un Estado miembro."@en ;
+                    rdfs:label "Competent Authority"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ContaminationRisk
+:ContaminationRisk rdf:type owl:Class ;
+                   rdfs:subClassOf :Risk ;
+                   rdfs:comment "Riesgo de contaminación del producto o de sus reactivos."@en ;
+                   rdfs:label "Contamination Risk"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#CorrectiveAction
+:CorrectiveAction rdf:type owl:Class ;
+                  rdfs:subClassOf :RegulatedEntity ;
+                  rdfs:comment "Acción correctiva de seguridad en campo (FSCA) emprendida por el fabricante para reducir el riesgo asociado a un dispositivo comercializado."@en ;
+                  rdfs:label "Field Safety Corrective Action"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Country
+:Country rdf:type owl:Class ;
+         rdfs:subClassOf :RegulatedEntity ;
+         rdfs:comment "Estado en el que opera un fabricante, se notifica un incidente o se ve afectada una acción correctiva."@en ;
+         rdfs:label "Country"@en ;
+         rdfs:seeAlso <http://dbpedia.org/resource/Country> .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#CybersecurityRisk
+:CybersecurityRisk rdf:type owl:Class ;
+                   rdfs:subClassOf :Risk ;
+                   rdfs:comment "Riesgo derivado de vulnerabilidades de ciberseguridad del dispositivo."@en ;
+                   rdfs:label "Cybersecurity Risk"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DiagnosticRisk
+:DiagnosticRisk rdf:type owl:Class ;
+                rdfs:subClassOf :Risk ;
+                rdfs:comment "Riesgo específico de dispositivos IVD: falsos positivos, falsos negativos, reactividad cruzada, etc."@en ;
+                rdfs:label "Diagnostic Risk"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#HighRiskClassCategory
+:HighRiskClassCategory rdf:type owl:Class ;
+                       rdfs:subClassOf :RiskClass ;
+                       rdfs:comment "Metacategoría que agrupa las clases de riesgo más altas (ClassIII en MDR, ClassD en IVDR) y que se usa como disparador de la regla SWRL de HighRiskDevice."@en ;
+                       rdfs:label "High Risk Class Category"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#HighRiskDevice
+:HighRiskDevice rdf:type owl:Class ;
+                rdfs:subClassOf :MedicalDevice ;
+                rdfs:comment "Clase inferida que agrupa los dispositivos con clase de riesgo más alta (ClassIII bajo MDR o ClassD bajo IVDR). Se puebla mediante regla SWRL."@en ;
+                rdfs:label "High Risk Device"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#IVDRFramework
+:IVDRFramework rdf:type owl:Class ;
+               rdfs:subClassOf :RegulatoryFramework ;
+               rdfs:comment "Regulation (EU) 2017/746 on in vitro diagnostic medical devices."@en ;
+               rdfs:label "IVDR Framework"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#IVDRRiskClass
+:IVDRRiskClass rdf:type owl:Class ;
+               rdfs:subClassOf :RiskClass ;
+               owl:disjointWith :MDRRiskClass ;
+               rdfs:comment "Clase de riesgo bajo el reglamento IVDR (A, B, C, D)."@en ;
+               rdfs:label "IVDR Risk Class"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ImplantableActiveDevice
+:ImplantableActiveDevice rdf:type owl:Class ;
+                         rdfs:subClassOf :ActiveDevice ,
+                                         :ImplantableDevice ;
+                         rdfs:comment "Dispositivo que es a la vez implantable y activo. Intersección de ActiveDevice e ImplantableDevice."@en ;
+                         rdfs:label "Implantable Active Device"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ImplantableDevice
+:ImplantableDevice rdf:type owl:Class ;
+                   rdfs:subClassOf :MedicalDevice ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :hasRiskClass ;
+                                     owl:someValuesFrom :MDRRiskClass
+                                   ] ;
+                   rdfs:comment "Dispositivo diseñado para ser introducido total o parcialmente en el cuerpo humano mediante intervención quirúrgica y permanecer allí tras dicho procedimiento."@en ;
+                   rdfs:label "Implantable Device"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#InSituCorrection
+:InSituCorrection rdf:type owl:Class ;
+                  rdfs:subClassOf :CorrectiveAction ;
+                  rdfs:comment "Corrección del dispositivo en el centro de uso (actualización software, cambio de consumible, reentrenamiento…)."@en ;
+                  rdfs:label "In Situ Correction"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#InVitroDiagnosticDevice
+:InVitroDiagnosticDevice rdf:type owl:Class ;
+                         rdfs:subClassOf :MedicalDevice ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :hasRiskClass ;
+                                           owl:someValuesFrom :IVDRRiskClass
+                                         ] ;
+                         rdfs:comment "Dispositivo destinado a examinar muestras procedentes del cuerpo humano con fines diagnósticos, según el reglamento IVDR (EU 2017/746)."@en ;
+                         rdfs:label "In Vitro Diagnostic Device"@en ;
+                         rdfs:seeAlso <http://dbpedia.org/resource/Medical_test> .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Incident
+:Incident rdf:type owl:Class ;
+          rdfs:subClassOf :RegulatedEntity ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :affects ;
+                            owl:someValuesFrom :MedicalDevice
+                          ] ;
+          rdfs:comment "Evento adverso asociado a un dispositivo médico que es notificado a las autoridades regulatorias a través de EUDAMED."@en ;
+          rdfs:label "Incident"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#InfectionRisk
+:InfectionRisk rdf:type owl:Class ;
+               rdfs:subClassOf :Risk ;
+               rdfs:comment "Riesgo de infección asociado al uso o implantación del dispositivo."@en ;
+               rdfs:label "Infection Risk"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#InjuryRisk
+:InjuryRisk rdf:type owl:Class ;
+            rdfs:subClassOf :Risk ;
+            rdfs:comment "Riesgo de daño directo al paciente."@en ;
+            rdfs:label "Injury Risk"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#InterferenceRisk
+:InterferenceRisk rdf:type owl:Class ;
+                  rdfs:subClassOf :Risk ;
+                  rdfs:comment "Riesgo por interferencias electromagnéticas o artefactos producidos por el dispositivo."@en ;
+                  rdfs:label "Interference Risk"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MDRFramework
+:MDRFramework rdf:type owl:Class ;
+              rdfs:subClassOf :RegulatoryFramework ;
+              rdfs:comment "Regulation (EU) 2017/745 on medical devices."@en ;
+              rdfs:label "MDR Framework"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MDRRiskClass
+:MDRRiskClass rdf:type owl:Class ;
+              rdfs:subClassOf :RiskClass ;
+              rdfs:comment "Clase de riesgo bajo el reglamento MDR (I, IIa, IIb, III)."@en ;
+              rdfs:label "MDR Risk Class"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MalfunctionRisk
+:MalfunctionRisk rdf:type owl:Class ;
+                 rdfs:subClassOf :Risk ;
+                 rdfs:comment "Riesgo derivado del mal funcionamiento del dispositivo (eléctrico, mecánico, de rendimiento, etc.)."@en ;
+                 rdfs:label "Malfunction Risk"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Manufacturer
+:Manufacturer rdf:type owl:Class ;
+              rdfs:subClassOf :RegulatedEntity ;
+              rdfs:comment "Persona jurídica responsable del diseño, fabricación, envasado y etiquetado de un dispositivo antes de su comercialización bajo su propio nombre."@en ;
+              rdfs:label "Manufacturer"@en ;
+              rdfs:seeAlso <http://dbpedia.org/resource/Manufacturing> .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MaterialRisk
+:MaterialRisk rdf:type owl:Class ;
+              rdfs:subClassOf :Risk ;
+              rdfs:comment "Riesgo derivado de los materiales del dispositivo (desgaste, corrosión, toxicidad)."@en ;
+              rdfs:label "Material Risk"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MedicalDevice
+:MedicalDevice rdf:type owl:Class ;
+               owl:equivalentClass [ rdf:type owl:Restriction ;
+                                     owl:onProperty :hasManufacturer ;
+                                     owl:someValuesFrom :Manufacturer
+                                   ] ;
+               rdfs:subClassOf :RegulatedEntity ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasManufacturer ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass :Manufacturer
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasRiskClass ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass :RiskClass
+                               ] ;
+               rdfs:comment "Dispositivo médico registrado en EUDAMED. Cualquier instrumento, aparato o software destinado a un uso médico según los reglamentos MDR o IVDR."@en ;
+               rdfs:label "Medical Device"@en ;
+               rdfs:seeAlso <http://dbpedia.org/resource/Medical_device> .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#NearMissIncident
+:NearMissIncident rdf:type owl:Class ;
+                  rdfs:subClassOf :Incident ;
+                  owl:disjointWith :SeriousIncident ;
+                  rdfs:comment "Cuasi-incidente detectado sin consecuencias finales sobre el paciente."@en ;
+                  rdfs:label "Near-Miss Incident"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RadiationRisk
+:RadiationRisk rdf:type owl:Class ;
+               rdfs:subClassOf :Risk ;
+               rdfs:comment "Riesgo asociado a la exposición inadvertida o excesiva a radiación ionizante o no ionizante."@en ;
+               rdfs:label "Radiation Risk"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Recall
+:Recall rdf:type owl:Class ;
+        rdfs:subClassOf :CorrectiveAction ;
+        rdfs:comment "Retirada de producto del mercado."@en ;
+        rdfs:label "Recall"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RecalledDevice
+:RecalledDevice rdf:type owl:Class ;
+                rdfs:subClassOf :MedicalDevice ;
+                rdfs:comment "Clase inferida que agrupa los dispositivos asociados a una acción correctiva de tipo Recall. Se puebla mediante regla SWRL."@en ;
+                rdfs:label "Recalled Device"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RegulatedEntity
+:RegulatedEntity rdf:type owl:Class ;
+                 rdfs:comment "Clase raíz que agrupa cualquier entidad sujeta a los reglamentos MDR (EU 2017/745) e IVDR (EU 2017/746)."@en ;
+                 rdfs:isDefinedBy <http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr> ;
+                 rdfs:label "Regulated Entity"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RegulatoryFramework
+:RegulatoryFramework rdf:type owl:Class ;
+                     rdfs:subClassOf :RegulatedEntity ;
+                     rdfs:comment "Reglamento europeo bajo el que se clasifica y vigila un dispositivo."@en ;
+                     rdfs:label "Regulatory Framework"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Risk
+:Risk rdf:type owl:Class ;
+      rdfs:subClassOf :RegulatedEntity ;
+      rdfs:comment "Riesgo identificado que puede asociarse a un tipo de dispositivo, codificado conforme a la nomenclatura IMDRF."@en ;
+      rdfs:label "Risk"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RiskClass
+:RiskClass rdf:type owl:Class ;
+           rdfs:subClassOf :RegulatedEntity ;
+           rdfs:comment "Categoría de riesgo asignada a un dispositivo conforme al anexo correspondiente del MDR o del IVDR."@en ;
+           rdfs:label "Risk Class"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#SafetyAlert
+:SafetyAlert rdf:type owl:Class ;
+             rdfs:subClassOf :CorrectiveAction ;
+             rdfs:comment "Comunicación de seguridad sin retirada del producto."@en ;
+             rdfs:label "Safety Alert"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#SelfTestDevice
+:SelfTestDevice rdf:type owl:Class ;
+                rdfs:subClassOf :InVitroDiagnosticDevice ;
+                rdfs:comment "Dispositivo IVD destinado a ser utilizado por personas legas en el ámbito doméstico (autodiagnóstico)."@en ;
+                rdfs:label "Self Test Device"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#SeriousIncident
+:SeriousIncident rdf:type owl:Class ;
+                 rdfs:subClassOf :Incident ;
+                 rdfs:comment "Incidente grave que provoca, o pudo haber provocado, la muerte del paciente o un deterioro grave de su salud."@en ;
+                 rdfs:label "Serious Incident"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#SingleUseDevice
+:SingleUseDevice rdf:type owl:Class ;
+                 rdfs:subClassOf :MedicalDevice ;
+                 rdfs:comment "Dispositivo destinado a utilizarse en un único paciente durante un único procedimiento."@en ;
+                 rdfs:label "Single Use Device"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#SoftwareRisk
+:SoftwareRisk rdf:type owl:Class ;
+              rdfs:subClassOf :Risk ;
+              rdfs:comment "Riesgo relacionado con defectos del software embebido o de control del dispositivo."@en ;
+              rdfs:label "Software Risk"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#UserNotice
+:UserNotice rdf:type owl:Class ;
+            rdfs:subClassOf :CorrectiveAction ;
+            rdfs:comment "Notificación al usuario con instrucciones de uso actualizadas."@en ;
+            rdfs:label "User Notice"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://dbpedia.org/resource/Abbott_Laboratories
+<http://dbpedia.org/resource/Abbott_Laboratories> rdf:type owl:NamedIndividual ;
+                                                  owl:sameAs :MAN-002 .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-002
+
+###  http://dbpedia.org/resource/Belgium
+<http://dbpedia.org/resource/Belgium> rdf:type owl:NamedIndividual ;
+                                      owl:sameAs :Belgium .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Belgium
+
+###  http://dbpedia.org/resource/BioMérieux
+<http://dbpedia.org/resource/BioMérieux> rdf:type owl:NamedIndividual ;
+                                         owl:sameAs :MAN-015 .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-015
+
+###  http://dbpedia.org/resource/Biotronik
+<http://dbpedia.org/resource/Biotronik> rdf:type owl:NamedIndividual ;
+                                        owl:sameAs :MAN-008 .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-008
+
+###  http://dbpedia.org/resource/Boston_Scientific
+<http://dbpedia.org/resource/Boston_Scientific> rdf:type owl:NamedIndividual ;
+                                                owl:sameAs :MAN-006 .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-006
+
+###  http://dbpedia.org/resource/Denmark
+<http://dbpedia.org/resource/Denmark> rdf:type owl:NamedIndividual ;
+                                      owl:sameAs :Denmark .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Denmark
+
+###  http://dbpedia.org/resource/Dräger
+<http://dbpedia.org/resource/Dräger> rdf:type owl:NamedIndividual ;
+                                     owl:sameAs :MAN-012 .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-012
+
+###  http://dbpedia.org/resource/Federal_Institute_for_Drugs_and_Medical_Devices
+<http://dbpedia.org/resource/Federal_Institute_for_Drugs_and_Medical_Devices> rdf:type owl:NamedIndividual ;
+                                                                              owl:sameAs :BfArM .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#BfArM
+
+###  http://dbpedia.org/resource/France
+<http://dbpedia.org/resource/France> rdf:type owl:NamedIndividual ;
+                                     owl:sameAs :France .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#France
+
+###  http://dbpedia.org/resource/GE_HealthCare
+<http://dbpedia.org/resource/GE_HealthCare> rdf:type owl:NamedIndividual ;
+                                            owl:sameAs :MAN-009 .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-009
+
+###  http://dbpedia.org/resource/Germany
+<http://dbpedia.org/resource/Germany> rdf:type owl:NamedIndividual ;
+                                      owl:sameAs :Germany .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Germany
+
+###  http://dbpedia.org/resource/Hologic
+<http://dbpedia.org/resource/Hologic> rdf:type owl:NamedIndividual ;
+                                      owl:sameAs :MAN-014 .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-014
+
+###  http://dbpedia.org/resource/Italy
+<http://dbpedia.org/resource/Italy> rdf:type owl:NamedIndividual ;
+                                    owl:sameAs :Italy .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Italy
+
+###  http://dbpedia.org/resource/LivaNova
+<http://dbpedia.org/resource/LivaNova> rdf:type owl:NamedIndividual ;
+                                       owl:sameAs :MAN-011 .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-011
+
+###  http://dbpedia.org/resource/Medicines_and_Healthcare_products_Regulatory_Agency
+<http://dbpedia.org/resource/Medicines_and_Healthcare_products_Regulatory_Agency> rdf:type owl:NamedIndividual ;
+                                                                                  owl:sameAs :MHRA .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MHRA
+
+###  http://dbpedia.org/resource/Medtronic
+<http://dbpedia.org/resource/Medtronic> rdf:type owl:NamedIndividual ;
+                                        owl:sameAs :MAN-001 .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-001
+
+###  http://dbpedia.org/resource/Netherlands
+<http://dbpedia.org/resource/Netherlands> rdf:type owl:NamedIndividual ;
+                                          owl:sameAs :Netherlands .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Netherlands
+
+###  http://dbpedia.org/resource/Philips
+<http://dbpedia.org/resource/Philips> rdf:type owl:NamedIndividual ;
+                                      owl:sameAs :MAN-004 .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-004
+
+###  http://dbpedia.org/resource/Poland
+<http://dbpedia.org/resource/Poland> rdf:type owl:NamedIndividual ;
+                                     owl:sameAs :Poland .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Poland
+
+###  http://dbpedia.org/resource/Republic_of_Ireland
+<http://dbpedia.org/resource/Republic_of_Ireland> rdf:type owl:NamedIndividual ;
+                                                  owl:sameAs :Ireland .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Ireland
+
+###  http://dbpedia.org/resource/Roche_Diagnostics
+<http://dbpedia.org/resource/Roche_Diagnostics> rdf:type owl:NamedIndividual ;
+                                                owl:sameAs :MAN-005 .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-005
+
+###  http://dbpedia.org/resource/Siemens_Healthineers
+<http://dbpedia.org/resource/Siemens_Healthineers> rdf:type owl:NamedIndividual ;
+                                                   owl:sameAs :MAN-003 .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-003
+
+###  http://dbpedia.org/resource/Spain
+<http://dbpedia.org/resource/Spain> rdf:type owl:NamedIndividual ;
+                                    owl:sameAs :Spain .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Spain
+
+###  http://dbpedia.org/resource/Stryker_Corporation
+<http://dbpedia.org/resource/Stryker_Corporation> rdf:type owl:NamedIndividual ;
+                                                  owl:sameAs :MAN-007 .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-007
+
+###  http://dbpedia.org/resource/Sweden
+<http://dbpedia.org/resource/Sweden> rdf:type owl:NamedIndividual ;
+                                     owl:sameAs :Sweden .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Sweden
+
+###  http://dbpedia.org/resource/Switzerland
+<http://dbpedia.org/resource/Switzerland> rdf:type owl:NamedIndividual ;
+                                          owl:sameAs :Switzerland .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Switzerland
+
+###  http://dbpedia.org/resource/United_Kingdom
+<http://dbpedia.org/resource/United_Kingdom> rdf:type owl:NamedIndividual ;
+                                             owl:sameAs :UnitedKingdom .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#UnitedKingdom
+
+###  http://dbpedia.org/resource/Zimmer_Biomet
+<http://dbpedia.org/resource/Zimmer_Biomet> rdf:type owl:NamedIndividual ;
+                                            owl:sameAs :MAN-010 .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-010
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#AFMPS
+:AFMPS rdf:type owl:NamedIndividual ,
+                :CompetentAuthority ;
+       rdfs:label "Agence fédérale des médicaments et des produits de santé (Belgium)"@fr .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ANSM
+:ANSM rdf:type owl:NamedIndividual ,
+               :CompetentAuthority ;
+      rdfs:label "Agence nationale de sécurité du médicament (France)"@fr .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Belgium
+:Belgium rdf:type owl:NamedIndividual ,
+                  :Country ;
+         rdfs:label "Belgium"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#BfArM
+:BfArM rdf:type owl:NamedIndividual ,
+                :CompetentAuthority ;
+       rdfs:comment "Autoridad competente alemana para dispositivos médicos."@en ;
+       rdfs:label "Bundesinstitut für Arzneimittel und Medizinprodukte"@de .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ClassA
+:ClassA rdf:type owl:NamedIndividual ,
+                 :IVDRRiskClass ;
+        rdfs:comment "Clase de riesgo A bajo IVDR: riesgo bajo individual y para la salud pública."@en ;
+        rdfs:label "Class A (IVDR)"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ClassB
+:ClassB rdf:type owl:NamedIndividual ,
+                 :IVDRRiskClass ;
+        rdfs:comment "Clase de riesgo B bajo IVDR."@en ;
+        rdfs:label "Class B (IVDR)"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ClassC
+:ClassC rdf:type owl:NamedIndividual ,
+                 :IVDRRiskClass ;
+        rdfs:comment "Clase de riesgo C bajo IVDR."@en ;
+        rdfs:label "Class C (IVDR)"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ClassD
+:ClassD rdf:type owl:NamedIndividual ,
+                 :HighRiskClassCategory ,
+                 :IVDRRiskClass ;
+        rdfs:comment "Clase de riesgo D bajo IVDR: riesgo más alto tanto individual como para la salud pública."@en ;
+        rdfs:label "Class D (IVDR)"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ClassI
+:ClassI rdf:type owl:NamedIndividual ,
+                 :MDRRiskClass ;
+        rdfs:comment "Clase de riesgo I bajo MDR: riesgo bajo."@en ;
+        rdfs:label "Class I (MDR)"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ClassIII
+:ClassIII rdf:type owl:NamedIndividual ,
+                   :HighRiskClassCategory ,
+                   :MDRRiskClass ;
+          rdfs:comment "Clase de riesgo III bajo MDR: riesgo alto."@en ;
+          rdfs:label "Class III (MDR)"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ClassIIa
+:ClassIIa rdf:type owl:NamedIndividual ,
+                   :MDRRiskClass ;
+          rdfs:comment "Clase de riesgo IIa bajo MDR: riesgo medio-bajo."@en ;
+          rdfs:label "Class IIa (MDR)"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ClassIIb
+:ClassIIb rdf:type owl:NamedIndividual ,
+                   :MDRRiskClass ;
+          rdfs:comment "Clase de riesgo IIb bajo MDR: riesgo medio-alto."@en ;
+          rdfs:label "Class IIb (MDR)"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-001
+:DEV-001 rdf:type owl:NamedIndividual ,
+                  :ImplantableActiveDevice ;
+         :hasManufacturer :MAN-001 ;
+         :hasRiskClass :ClassIII ;
+         :regulatedBy :MDR ;
+         :deviceName "HeartMate 3 LVAD" ;
+         :intendedPurpose "Ventricular assist device for end-stage heart failure" ;
+         :isActive "true"^^xsd:boolean ;
+         :isImplantable "true"^^xsd:boolean ;
+         :isIvd "false"^^xsd:boolean ;
+         :isReusable "false"^^xsd:boolean ;
+         :udiDi "(01)00380740009095" ;
+         rdfs:label "HeartMate 3 LVAD"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-002
+:DEV-002 rdf:type owl:NamedIndividual ,
+                  :ActiveImplant ;
+         :hasManufacturer :MAN-001 ;
+         :hasRiskClass :ClassIII ;
+         :regulatedBy :MDR ;
+         :deviceName "Micra AV Transcatheter Pacing System" ;
+         :intendedPurpose "Leadless cardiac pacemaker for atrioventricular synchrony" ;
+         :isActive "true"^^xsd:boolean ;
+         :isImplantable "true"^^xsd:boolean ;
+         :isIvd "false"^^xsd:boolean ;
+         :isReusable "false"^^xsd:boolean ;
+         :udiDi "(01)00380740009112" ;
+         rdfs:label "Micra AV Transcatheter Pacing System"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-003
+:DEV-003 rdf:type owl:NamedIndividual ,
+                  :ImplantableDevice ;
+         :hasManufacturer :MAN-002 ;
+         :hasRiskClass :ClassIII ;
+         :regulatedBy :MDR ;
+         :deviceName "Portico Transcatheter Heart Valve" ;
+         :intendedPurpose "Transcatheter aortic valve replacement (TAVI)" ;
+         :isActive "false"^^xsd:boolean ;
+         :isImplantable "true"^^xsd:boolean ;
+         :isIvd "false"^^xsd:boolean ;
+         :isReusable "false"^^xsd:boolean ;
+         :udiDi "(01)00800002222291" ;
+         rdfs:label "Portico Transcatheter Heart Valve"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-004
+:DEV-004 rdf:type owl:NamedIndividual ,
+                  :ImplantableActiveDevice ;
+         :hasManufacturer :MAN-006 ;
+         :hasRiskClass :ClassIIb ;
+         :regulatedBy :MDR ;
+         :deviceName "SYNERGY Stent System" ;
+         :intendedPurpose "Drug-eluting coronary stent" ;
+         :isActive "true"^^xsd:boolean ;
+         :isImplantable "true"^^xsd:boolean ;
+         :isIvd "false"^^xsd:boolean ;
+         :isReusable "false"^^xsd:boolean ;
+         :udiDi "(01)08714729002817" ;
+         rdfs:label "SYNERGY Stent System"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-005
+:DEV-005 rdf:type owl:NamedIndividual ,
+                  :ActiveImplant ;
+         :hasManufacturer :MAN-006 ;
+         :hasRiskClass :ClassIII ;
+         :regulatedBy :MDR ;
+         :deviceName "ACUITY X4 Quadripolar LV Lead" ;
+         :intendedPurpose "Cardiac resynchronization therapy lead" ;
+         :isActive "true"^^xsd:boolean ;
+         :isImplantable "true"^^xsd:boolean ;
+         :isIvd "false"^^xsd:boolean ;
+         :isReusable "false"^^xsd:boolean ;
+         :udiDi "(01)08714729004873" ;
+         rdfs:label "ACUITY X4 Quadripolar LV Lead"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-006
+:DEV-006 rdf:type owl:NamedIndividual ,
+                  :SingleUseDevice ;
+         :hasManufacturer :MAN-004 ;
+         :hasRiskClass :ClassIIb ;
+         :regulatedBy :MDR ;
+         :deviceName "STELLAREX Drug-Coated Balloon" ;
+         :intendedPurpose "Peripheral artery drug-coated angioplasty balloon" ;
+         :isActive "false"^^xsd:boolean ;
+         :isImplantable "false"^^xsd:boolean ;
+         :isIvd "false"^^xsd:boolean ;
+         :isReusable "false"^^xsd:boolean ;
+         :udiDi "(01)08718998000001" ;
+         rdfs:label "STELLAREX Drug-Coated Balloon"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-007
+:DEV-007 rdf:type owl:NamedIndividual ,
+                  :ActiveDevice ;
+         :hasManufacturer :MAN-003 ;
+         :hasRiskClass :ClassIIa ;
+         :regulatedBy :MDR ;
+         :deviceName "ACUSON Sequoia Ultrasound" ;
+         :intendedPurpose "Diagnostic ultrasound imaging system" ;
+         :isActive "true"^^xsd:boolean ;
+         :isImplantable "false"^^xsd:boolean ;
+         :isIvd "false"^^xsd:boolean ;
+         :isReusable "true"^^xsd:boolean ;
+         :udiDi "(01)04054839450001" ;
+         rdfs:label "ACUSON Sequoia Ultrasound"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-008
+:DEV-008 rdf:type owl:NamedIndividual ,
+                  :ActiveDevice ;
+         :hasManufacturer :MAN-003 ;
+         :hasRiskClass :ClassIIa ;
+         :regulatedBy :MDR ;
+         :deviceName "MAGNETOM Vida MRI System" ;
+         :intendedPurpose "Magnetic resonance imaging system 3T" ;
+         :isActive "true"^^xsd:boolean ;
+         :isImplantable "false"^^xsd:boolean ;
+         :isIvd "false"^^xsd:boolean ;
+         :isReusable "true"^^xsd:boolean ;
+         :udiDi "(01)04054839460002" ;
+         rdfs:label "MAGNETOM Vida MRI System"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-009
+:DEV-009 rdf:type owl:NamedIndividual ,
+                  :ImplantableDevice ;
+         :hasManufacturer :MAN-010 ;
+         :hasRiskClass :ClassIII ;
+         :regulatedBy :MDR ;
+         :deviceName "Persona Knee System" ;
+         :intendedPurpose "Total knee arthroplasty implant system" ;
+         :isActive "false"^^xsd:boolean ;
+         :isImplantable "true"^^xsd:boolean ;
+         :isIvd "false"^^xsd:boolean ;
+         :isReusable "false"^^xsd:boolean ;
+         :udiDi "(01)07612345001001" ;
+         rdfs:label "Persona Knee System"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-010
+:DEV-010 rdf:type owl:NamedIndividual ,
+                  :ImplantableDevice ;
+         :hasManufacturer :MAN-007 ;
+         :hasRiskClass :ClassIII ;
+         :regulatedBy :MDR ;
+         :deviceName "TRITON Total Hip System" ;
+         :intendedPurpose "Ceramic-on-ceramic total hip replacement" ;
+         :isActive "false"^^xsd:boolean ;
+         :isImplantable "true"^^xsd:boolean ;
+         :isIvd "false"^^xsd:boolean ;
+         :isReusable "false"^^xsd:boolean ;
+         :udiDi "(01)09876543002002" ;
+         rdfs:label "TRITON Total Hip System"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-011
+:DEV-011 rdf:type owl:NamedIndividual ,
+                  :ActiveImplant ;
+         :hasManufacturer :MAN-011 ;
+         :hasRiskClass :ClassIII ;
+         :regulatedBy :MDR ;
+         :deviceName "Iluvien Intravitreal Implant" ;
+         :intendedPurpose "Sustained-release fluocinolone acetonide ocular implant" ;
+         :isActive "true"^^xsd:boolean ;
+         :isImplantable "true"^^xsd:boolean ;
+         :isIvd "false"^^xsd:boolean ;
+         :isReusable "false"^^xsd:boolean ;
+         :udiDi "(01)05391520001011" ;
+         rdfs:label "Iluvien Intravitreal Implant"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-012
+:DEV-012 rdf:type owl:NamedIndividual ,
+                  :ActiveImplant ;
+         :hasManufacturer :MAN-008 ;
+         :hasRiskClass :ClassIII ;
+         :regulatedBy :MDR ;
+         :deviceName "Viva Cardiac Resynchronization Defibrillator" ;
+         :intendedPurpose "Cardiac resynchronization therapy with defibrillation" ;
+         :isActive "true"^^xsd:boolean ;
+         :isImplantable "true"^^xsd:boolean ;
+         :isIvd "false"^^xsd:boolean ;
+         :isReusable "false"^^xsd:boolean ;
+         :udiDi "(01)04012099001012" ;
+         rdfs:label "Viva Cardiac Resynchronization Defibrillator"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-013
+:DEV-013 rdf:type owl:NamedIndividual ,
+                  :ActiveDevice ;
+         :hasManufacturer :MAN-012 ;
+         :hasRiskClass :ClassIIb ;
+         :regulatedBy :MDR ;
+         :deviceName "ATERA Mechanical Ventilator" ;
+         :intendedPurpose "ICU mechanical ventilator with pressure and volume modes" ;
+         :isActive "true"^^xsd:boolean ;
+         :isImplantable "false"^^xsd:boolean ;
+         :isIvd "false"^^xsd:boolean ;
+         :isReusable "true"^^xsd:boolean ;
+         :udiDi "(01)04046539001013" ;
+         rdfs:label "ATERA Mechanical Ventilator"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-014
+:DEV-014 rdf:type owl:NamedIndividual ,
+                  :ActiveDevice ;
+         :hasManufacturer :MAN-004 ;
+         :hasRiskClass :ClassIIa ;
+         :regulatedBy :MDR ;
+         :deviceName "Lumify Portable Ultrasound" ;
+         :intendedPurpose "Handheld point-of-care ultrasound probe" ;
+         :isActive "true"^^xsd:boolean ;
+         :isImplantable "false"^^xsd:boolean ;
+         :isIvd "false"^^xsd:boolean ;
+         :isReusable "true"^^xsd:boolean ;
+         :udiDi "(01)08718998001014" ;
+         rdfs:label "Lumify Portable Ultrasound"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-015
+:DEV-015 rdf:type owl:NamedIndividual ,
+                  :ActiveDevice ;
+         :hasManufacturer :MAN-013 ;
+         :hasRiskClass :ClassIIb ;
+         :regulatedBy :MDR ;
+         :deviceName "Hemodialysis Machine 5008S" ;
+         :intendedPurpose "High-volume online hemodiafiltration machine" ;
+         :isActive "true"^^xsd:boolean ;
+         :isImplantable "false"^^xsd:boolean ;
+         :isIvd "false"^^xsd:boolean ;
+         :isReusable "true"^^xsd:boolean ;
+         :udiDi "(01)04547597001015" ;
+         rdfs:label "Hemodialysis Machine 5008S"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-016
+:DEV-016 rdf:type owl:NamedIndividual ,
+                  :InVitroDiagnosticDevice ;
+         :hasManufacturer :MAN-005 ;
+         :hasRiskClass :ClassC ;
+         :regulatedBy :IVDR ;
+         :deviceName "cobas e 801 Immunoassay Analyzer" ;
+         :intendedPurpose "Automated immunoassay analyzer for clinical laboratory" ;
+         :isActive "true"^^xsd:boolean ;
+         :isImplantable "false"^^xsd:boolean ;
+         :isIvd "true"^^xsd:boolean ;
+         :isReusable "true"^^xsd:boolean ;
+         :udiDi "(01)04015630001016" ;
+         rdfs:label "cobas e 801 Immunoassay Analyzer"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-017
+:DEV-017 rdf:type owl:NamedIndividual ,
+                  :InVitroDiagnosticDevice ;
+         :hasManufacturer :MAN-005 ;
+         :hasRiskClass :ClassC ;
+         :regulatedBy :IVDR ;
+         :deviceName "cobas SARS-CoV-2 RT-PCR Test" ;
+         :intendedPurpose "Molecular diagnostic test for SARS-CoV-2 detection" ;
+         :isActive "false"^^xsd:boolean ;
+         :isImplantable "false"^^xsd:boolean ;
+         :isIvd "true"^^xsd:boolean ;
+         :isReusable "false"^^xsd:boolean ;
+         :udiDi "(01)04015630001017" ;
+         rdfs:label "cobas SARS-CoV-2 RT-PCR Test"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-018
+:DEV-018 rdf:type owl:NamedIndividual ,
+                  :InVitroDiagnosticDevice ;
+         :hasManufacturer :MAN-015 ;
+         :hasRiskClass :ClassD ;
+         :regulatedBy :IVDR ;
+         :deviceName "VIDAS HIV DUO Ultra" ;
+         :intendedPurpose "Combined HIV Ag/Ab detection assay" ;
+         :isActive "false"^^xsd:boolean ;
+         :isImplantable "false"^^xsd:boolean ;
+         :isIvd "true"^^xsd:boolean ;
+         :isReusable "false"^^xsd:boolean ;
+         :udiDi "(01)03760027001018" ;
+         rdfs:label "VIDAS HIV DUO Ultra"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-019
+:DEV-019 rdf:type owl:NamedIndividual ,
+                  :InVitroDiagnosticDevice ;
+         :hasManufacturer :MAN-014 ;
+         :hasRiskClass :ClassC ;
+         :regulatedBy :IVDR ;
+         :deviceName "PROGENSA PCA3 Assay" ;
+         :intendedPurpose "Urine-based prostate cancer diagnosis assay" ;
+         :isActive "false"^^xsd:boolean ;
+         :isImplantable "false"^^xsd:boolean ;
+         :isIvd "true"^^xsd:boolean ;
+         :isReusable "false"^^xsd:boolean ;
+         :udiDi "(01)07000087001019" ;
+         rdfs:label "PROGENSA PCA3 Assay"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-020
+:DEV-020 rdf:type owl:NamedIndividual ,
+                  :InVitroDiagnosticDevice ;
+         :hasManufacturer :MAN-002 ;
+         :hasRiskClass :ClassD ;
+         :regulatedBy :IVDR ;
+         :deviceName "Harmony Prenatal Test" ;
+         :intendedPurpose "Non-invasive prenatal testing (NIPT) for aneuploidies" ;
+         :isActive "false"^^xsd:boolean ;
+         :isImplantable "false"^^xsd:boolean ;
+         :isIvd "true"^^xsd:boolean ;
+         :isReusable "false"^^xsd:boolean ;
+         :udiDi "(01)00800002001020" ;
+         rdfs:label "Harmony Prenatal Test"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-021
+:DEV-021 rdf:type owl:NamedIndividual ,
+                  :SelfTestDevice ;
+         :hasManufacturer :MAN-009 ;
+         :hasRiskClass :ClassC ;
+         :regulatedBy :IVDR ;
+         :deviceName "OPTIGA Glucose Monitoring System" ;
+         :intendedPurpose "Continuous glucose monitor for patients with diabetes" ;
+         :isActive "true"^^xsd:boolean ;
+         :isImplantable "false"^^xsd:boolean ;
+         :isIvd "true"^^xsd:boolean ;
+         :isReusable "true"^^xsd:boolean ;
+         :udiDi "(01)07300000001021" ;
+         rdfs:label "OPTIGA Glucose Monitoring System"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-022
+:DEV-022 rdf:type owl:NamedIndividual ,
+                  :ActiveDevice ;
+         :hasManufacturer :MAN-009 ;
+         :hasRiskClass :ClassIIa ;
+         :regulatedBy :MDR ;
+         :deviceName "BeneVision N1 Patient Monitor" ;
+         :intendedPurpose "Portable patient monitor for vital signs" ;
+         :isActive "true"^^xsd:boolean ;
+         :isImplantable "false"^^xsd:boolean ;
+         :isIvd "false"^^xsd:boolean ;
+         :isReusable "true"^^xsd:boolean ;
+         :udiDi "(01)07300000001022" ;
+         rdfs:label "BeneVision N1 Patient Monitor"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-023
+:DEV-023 rdf:type owl:NamedIndividual ,
+                  :ActiveImplant ;
+         :hasManufacturer :MAN-008 ;
+         :hasRiskClass :ClassIII ;
+         :regulatedBy :MDR ;
+         :deviceName "Tivoli II Cochlear Implant" ;
+         :intendedPurpose "Active cochlear implant for sensorineural hearing loss" ;
+         :isActive "true"^^xsd:boolean ;
+         :isImplantable "true"^^xsd:boolean ;
+         :isIvd "false"^^xsd:boolean ;
+         :isReusable "false"^^xsd:boolean ;
+         :udiDi "(01)04012099001023" ;
+         rdfs:label "Tivoli II Cochlear Implant"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-024
+:DEV-024 rdf:type owl:NamedIndividual ,
+                  :ActiveDevice ;
+         :hasManufacturer :MAN-002 ;
+         :hasRiskClass :ClassIIb ;
+         :regulatedBy :MDR ;
+         :deviceName "Infusion Pump Plum 360" ;
+         :intendedPurpose "Large volume infusion pump with drug library" ;
+         :isActive "true"^^xsd:boolean ;
+         :isImplantable "false"^^xsd:boolean ;
+         :isIvd "false"^^xsd:boolean ;
+         :isReusable "true"^^xsd:boolean ;
+         :udiDi "(01)00800002001024" ;
+         rdfs:label "Infusion Pump Plum 360"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-025
+:DEV-025 rdf:type owl:NamedIndividual ,
+                  :ImplantableDevice ;
+         :hasManufacturer :MAN-011 ;
+         :hasRiskClass :ClassIII ;
+         :regulatedBy :MDR ;
+         :deviceName "ValveXpert Transcatheter Mitral Valve" ;
+         :intendedPurpose "Transcatheter mitral valve replacement system" ;
+         :isActive "false"^^xsd:boolean ;
+         :isImplantable "true"^^xsd:boolean ;
+         :isIvd "false"^^xsd:boolean ;
+         :isReusable "false"^^xsd:boolean ;
+         :udiDi "(01)05391520001025" ;
+         rdfs:label "ValveXpert Transcatheter Mitral Valve"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Denmark
+:Denmark rdf:type owl:NamedIndividual ,
+                  :Country ;
+         rdfs:label "Denmark"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#FSCA-001
+:FSCA-001 rdf:type owl:NamedIndividual ,
+                   :SafetyAlert ;
+          :actionDate "2024-02-01"^^xsd:date ;
+          :devicesAffected "850" ;
+          :fscaStatus "Open" ;
+          rdfs:label "HeartMate 3 anticoagulation protocol safety alert"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#FSCA-002
+:FSCA-002 rdf:type owl:NamedIndividual ,
+                   :Recall ;
+          :actionDate "2024-02-28"^^xsd:date ;
+          :closureDate "2024-05-31"^^xsd:date ;
+          :devicesAffected "1240" ;
+          :fscaStatus "Closed" ;
+          rdfs:label "Recall Micra AV lots 2022-09 / 2023-03"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#FSCA-008
+:FSCA-008 rdf:type owl:NamedIndividual ,
+                   :Recall ;
+          :actionDate "2024-06-05"^^xsd:date ;
+          :closureDate "2024-08-15"^^xsd:date ;
+          :devicesAffected "180" ;
+          :fscaStatus "Closed" ;
+          rdfs:label "ATERA ventilator software recall"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#FSCA-010
+:FSCA-010 rdf:type owl:NamedIndividual ,
+                   :Recall ;
+          :actionDate "2024-06-30"^^xsd:date ;
+          :closureDate "2024-08-31"^^xsd:date ;
+          :devicesAffected "12500" ;
+          :fscaStatus "Closed" ;
+          rdfs:label "cobas SARS-CoV-2 reagent lots recall"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#FSCA-012
+:FSCA-012 rdf:type owl:NamedIndividual ,
+                   :Recall ;
+          :actionDate "2024-08-20"^^xsd:date ;
+          :closureDate "2024-10-31"^^xsd:date ;
+          :devicesAffected "2870" ;
+          :fscaStatus "Closed" ;
+          rdfs:label "Plum 360 infusion pump recall"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#FSCA-015
+:FSCA-015 rdf:type owl:NamedIndividual ,
+                   :InSituCorrection ;
+          :actionDate "2024-10-01"^^xsd:date ;
+          :devicesAffected "890" ;
+          :fscaStatus "Open" ;
+          rdfs:label "5008S cybersecurity patch"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#France
+:France rdf:type owl:NamedIndividual ,
+                 :Country ;
+        rdfs:label "France"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Germany
+:Germany rdf:type owl:NamedIndividual ,
+                  :Country ;
+         rdfs:label "Germany"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#HPRA
+:HPRA rdf:type owl:NamedIndividual ,
+               :CompetentAuthority ;
+      rdfs:comment "Autoridad competente irlandesa para dispositivos médicos."@en ;
+      rdfs:label "Health Products Regulatory Authority (Ireland)"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#INC-001
+:INC-001 rdf:type owl:NamedIndividual ,
+                  :SeriousIncident ;
+         :affects :DEV-001 ;
+         :hasCorrectiveAction :FSCA-001 ;
+         :reportedInCountry :Germany ;
+         :triggeredBy :RSK-003 ;
+         :eventDate "2024-01-08"^^xsd:date ;
+         :incidentDescription "Patient implanted with HeartMate 3 LVAD developed ischemic stroke 6 months post-implant. Device thrombus confirmed by echocardiography." ;
+         :reportDate "2024-01-15"^^xsd:date ;
+         rdfs:label "Embolic stroke – HeartMate 3"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#INC-002
+:INC-002 rdf:type owl:NamedIndividual ,
+                  :SeriousIncident ;
+         :affects :DEV-002 ;
+         :hasCorrectiveAction :FSCA-002 ;
+         :reportedInCountry :France ;
+         :triggeredBy :RSK-009 ;
+         :eventDate "2024-01-29"^^xsd:date ;
+         :incidentDescription "Micra AV pacemaker reached elective replacement indicator 14 months earlier than expected longevity specification." ;
+         :reportDate "2024-02-03"^^xsd:date ;
+         rdfs:label "Premature battery depletion – Micra AV"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#INC-003
+:INC-003 rdf:type owl:NamedIndividual ,
+                  :SeriousIncident ;
+         :affects :DEV-003 ;
+         :reportedInCountry :Italy ;
+         :triggeredBy :RSK-005 ;
+         :eventDate "2024-02-15"^^xsd:date ;
+         :incidentDescription "Portico valve showed paravalvular leak grade III due to partial migration 2 weeks post-TAVI procedure." ;
+         :reportDate "2024-02-20"^^xsd:date ;
+         rdfs:label "Paravalvular leak – Portico THV"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#INC-004
+:INC-004 rdf:type owl:NamedIndividual ,
+                  :SeriousIncident ;
+         :affects :DEV-004 ;
+         :reportedInCountry :Spain ;
+         :triggeredBy :RSK-002 ;
+         :eventDate "2024-02-28"^^xsd:date ;
+         :incidentDescription "SYNERGY stent fracture detected on angiography 18 months post-implant causing in-stent restenosis." ;
+         :reportDate "2024-03-05"^^xsd:date ;
+         rdfs:label "Stent fracture – SYNERGY"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#INC-010
+:INC-010 rdf:type owl:NamedIndividual ,
+                  :SeriousIncident ;
+         :affects :DEV-013 ;
+         :hasCorrectiveAction :FSCA-008 ;
+         :reportedInCountry :Germany ;
+         :triggeredBy :RSK-010 ;
+         :eventDate "2024-05-19"^^xsd:date ;
+         :incidentDescription "ATERA ventilator software version 2.1.3 delivered FiO2 6% lower than set value for patients in ARDS protocol." ;
+         :reportDate "2024-05-20"^^xsd:date ;
+         rdfs:label "ATERA ventilator – FiO2 delivery error"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#INC-012
+:INC-012 rdf:type owl:NamedIndividual ,
+                  :SeriousIncident ;
+         :affects :DEV-017 ;
+         :hasCorrectiveAction :FSCA-010 ;
+         :reportedInCountry :Spain ;
+         :triggeredBy :RSK-015 ;
+         :eventDate "2024-06-10"^^xsd:date ;
+         :incidentDescription "cobas SARS-CoV-2 assay failed to detect Omicron BA.2.86 subvariant in 7 samples confirmed positive by sequencing." ;
+         :reportDate "2024-06-15"^^xsd:date ;
+         rdfs:label "cobas SARS-CoV-2 – false negative"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#INC-015
+:INC-015 rdf:type owl:NamedIndividual ,
+                  :SeriousIncident ;
+         :affects :DEV-024 ;
+         :hasCorrectiveAction :FSCA-012 ;
+         :reportedInCountry :Italy ;
+         :triggeredBy :RSK-010 ;
+         :eventDate "2024-08-04"^^xsd:date ;
+         :incidentDescription "Plum 360 infusion pump delivered 10x heparin dose due to software decimal point error in drug library version 4.2.1." ;
+         :reportDate "2024-08-05"^^xsd:date ;
+         rdfs:label "Plum 360 – decimal point error"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#INC-018
+:INC-018 rdf:type owl:NamedIndividual ,
+                  :SeriousIncident ;
+         :affects :DEV-015 ;
+         :hasCorrectiveAction :FSCA-015 ;
+         :reportedInCountry :Germany ;
+         :triggeredBy :RSK-018 ;
+         :eventDate "2024-09-12"^^xsd:date ;
+         :incidentDescription "5008S hemodialysis machine web interface exposed to hospital internal network." ;
+         :reportDate "2024-09-15"^^xsd:date ;
+         rdfs:label "5008S hemodialysis – cybersecurity"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#INC-019
+:INC-019 rdf:type owl:NamedIndividual ,
+                  :NearMissIncident ;
+         :affects :DEV-023 ;
+         :reportedInCountry :Sweden ;
+         :triggeredBy :RSK-001 ;
+         :eventDate "2024-09-28"^^xsd:date ;
+         :incidentDescription "Tivoli II cochlear implant failed to respond to initial activation programming." ;
+         :reportDate "2024-10-01"^^xsd:date ;
+         rdfs:label "Tivoli II cochlear – activation failure"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#IVDR
+:IVDR rdf:type owl:NamedIndividual ,
+               :IVDRFramework ;
+      rdfs:comment "Reglamento europeo sobre productos sanitarios para diagnóstico in vitro."@en ;
+      rdfs:label "IVDR – Regulation (EU) 2017/746"@en ;
+      rdfs:seeAlso <http://data.europa.eu/eli/reg/2017/746/oj> .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Ireland
+:Ireland rdf:type owl:NamedIndividual ,
+                  :Country ;
+         rdfs:label "Ireland"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Italy
+:Italy rdf:type owl:NamedIndividual ,
+                :Country ;
+       rdfs:label "Italy"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-001
+:MAN-001 rdf:type owl:NamedIndividual ,
+                  :Manufacturer ;
+         :locatedInCountry :Ireland ;
+         :supervisedBy :HPRA ;
+         :authorizationNumber "IE/2017/001234" ;
+         :contactEmail "regulatory@medtronic.com" ;
+         :eudamedSRN "SRN-IE-MED-0001" ;
+         rdfs:comment "Fabricante irlandés líder mundial en tecnología médica, especializado en dispositivos cardiovasculares, neurológicos y diabéticos."@es ;
+         rdfs:label "Medtronic plc"@en ;
+         rdfs:seeAlso <http://dbpedia.org/resource/Medtronic> .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-002
+:MAN-002 rdf:type owl:NamedIndividual ,
+                  :Manufacturer ;
+         :locatedInCountry :Germany ;
+         :supervisedBy :BfArM ;
+         :authorizationNumber "DE/2017/005678" ;
+         :contactEmail "regulatory@abbott.com" ;
+         :eudamedSRN "SRN-DE-MED-0002" ;
+         rdfs:label "Abbott Medical Devices"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-003
+:MAN-003 rdf:type owl:NamedIndividual ,
+                  :Manufacturer ;
+         :locatedInCountry :Germany ;
+         :supervisedBy :BfArM ;
+         :authorizationNumber "DE/2017/009012" ;
+         :contactEmail "regulatory@siemens-healthineers.com" ;
+         :eudamedSRN "SRN-DE-MED-0003" ;
+         rdfs:label "Siemens Healthineers AG"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-004
+:MAN-004 rdf:type owl:NamedIndividual ,
+                  :Manufacturer ;
+         :locatedInCountry :Netherlands ;
+         :supervisedBy :RIVM ;
+         :authorizationNumber "NL/2017/003456" ;
+         :contactEmail "regulatory@philips.com" ;
+         :eudamedSRN "SRN-NL-MED-0004" ;
+         rdfs:label "Philips Medical Systems"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-005
+:MAN-005 rdf:type owl:NamedIndividual ,
+                  :Manufacturer ;
+         :locatedInCountry :Germany ;
+         :supervisedBy :BfArM ;
+         :authorizationNumber "DE/2017/007890" ;
+         :contactEmail "regulatory@roche.com" ;
+         :eudamedSRN "SRN-DE-MED-0005" ;
+         rdfs:comment "División diagnóstica de Hoffmann-La Roche, fabricante de referencia en diagnóstico in vitro e inmunoanálisis clínico."@es ;
+         rdfs:label "Roche Diagnostics GmbH"@en ;
+         rdfs:seeAlso <http://dbpedia.org/resource/Roche_Diagnostics> .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-006
+:MAN-006 rdf:type owl:NamedIndividual ,
+                  :Manufacturer ;
+         :locatedInCountry :Ireland ;
+         :supervisedBy :HPRA ;
+         :authorizationNumber "IE/2017/002345" ;
+         :contactEmail "regulatory@bsci.com" ;
+         :eudamedSRN "SRN-IE-MED-0006" ;
+         rdfs:label "Boston Scientific Corporation"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-007
+:MAN-007 rdf:type owl:NamedIndividual ,
+                  :Manufacturer ;
+         :locatedInCountry :Netherlands ;
+         :supervisedBy :RIVM ;
+         :authorizationNumber "NL/2017/006789" ;
+         :contactEmail "regulatory@stryker.com" ;
+         :eudamedSRN "SRN-NL-MED-0007" ;
+         rdfs:label "Stryker Corporation"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-008
+:MAN-008 rdf:type owl:NamedIndividual ,
+                  :Manufacturer ;
+         :locatedInCountry :Germany ;
+         :supervisedBy :BfArM ;
+         :authorizationNumber "DE/2017/004567" ;
+         :contactEmail "regulatory@biotronik.com" ;
+         :eudamedSRN "SRN-DE-MED-0008" ;
+         rdfs:label "Biotronik SE & Co. KG"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-009
+:MAN-009 rdf:type owl:NamedIndividual ,
+                  :Manufacturer ;
+         :locatedInCountry :Sweden ;
+         :supervisedBy :MPA ;
+         :authorizationNumber "SE/2017/008901" ;
+         :contactEmail "regulatory@gehealthcare.com" ;
+         :eudamedSRN "SRN-SE-MED-0009" ;
+         rdfs:label "GE HealthCare Technologies"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-010
+:MAN-010 rdf:type owl:NamedIndividual ,
+                  :Manufacturer ;
+         :locatedInCountry :Switzerland ;
+         :supervisedBy :Swissmedic ;
+         :authorizationNumber "CH/2017/001122" ;
+         :contactEmail "regulatory@zimmerbiomet.com" ;
+         :eudamedSRN "SRN-CH-MED-0010" ;
+         rdfs:label "Zimmer Biomet Holdings"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-011
+:MAN-011 rdf:type owl:NamedIndividual ,
+                  :Manufacturer ;
+         :locatedInCountry :UnitedKingdom ;
+         :supervisedBy :MHRA ;
+         :authorizationNumber "UK/2017/003344" ;
+         :contactEmail "regulatory@livanova.com" ;
+         :eudamedSRN "SRN-UK-MED-0011" ;
+         rdfs:comment "Fabricante británico especializado en tecnología cardiovascular y neuromoduladora."@es ;
+         rdfs:label "LivaNova PLC"@en ;
+         rdfs:seeAlso <http://dbpedia.org/resource/LivaNova> .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-012
+:MAN-012 rdf:type owl:NamedIndividual ,
+                  :Manufacturer ;
+         :locatedInCountry :Germany ;
+         :supervisedBy :BfArM ;
+         :authorizationNumber "DE/2017/005566" ;
+         :contactEmail "regulatory@draeger.com" ;
+         :eudamedSRN "SRN-DE-MED-0012" ;
+         rdfs:label "Drägerwerk AG & Co. KGaA"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-013
+:MAN-013 rdf:type owl:NamedIndividual ,
+                  :Manufacturer ;
+         :locatedInCountry :France ;
+         :supervisedBy :ANSM ;
+         :authorizationNumber "FR/2017/007788" ;
+         :contactEmail "regulatory@nipro.com" ;
+         :eudamedSRN "SRN-FR-MED-0013" ;
+         rdfs:label "Nipro Corporation"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-014
+:MAN-014 rdf:type owl:NamedIndividual ,
+                  :Manufacturer ;
+         :locatedInCountry :Belgium ;
+         :supervisedBy :AFMPS ;
+         :authorizationNumber "BE/2017/009900" ;
+         :contactEmail "regulatory@hologic.com" ;
+         :eudamedSRN "SRN-BE-MED-0014" ;
+         rdfs:label "Hologic Inc."@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-015
+:MAN-015 rdf:type owl:NamedIndividual ,
+                  :Manufacturer ;
+         :locatedInCountry :France ;
+         :supervisedBy :ANSM ;
+         :authorizationNumber "FR/2017/002211" ;
+         :contactEmail "regulatory@biomerieux.com" ;
+         :eudamedSRN "SRN-FR-MED-0015" ;
+         rdfs:label "bioMérieux SA"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MDR
+:MDR rdf:type owl:NamedIndividual ,
+              :MDRFramework ;
+     rdfs:comment "Reglamento europeo sobre productos sanitarios."@en ;
+     rdfs:label "MDR – Regulation (EU) 2017/745"@en ;
+     rdfs:seeAlso <http://data.europa.eu/eli/reg/2017/745/oj> .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MHRA
+:MHRA rdf:type owl:NamedIndividual ,
+               :CompetentAuthority ;
+      rdfs:label "Medicines and Healthcare products Regulatory Agency (UK)"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MPA
+:MPA rdf:type owl:NamedIndividual ,
+              :CompetentAuthority ;
+     rdfs:label "Läkemedelsverket (Sweden)"@sv .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Netherlands
+:Netherlands rdf:type owl:NamedIndividual ,
+                      :Country ;
+             rdfs:label "Netherlands"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Poland
+:Poland rdf:type owl:NamedIndividual ,
+                 :Country ;
+        rdfs:label "Poland"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RIVM
+:RIVM rdf:type owl:NamedIndividual ,
+               :CompetentAuthority ;
+      rdfs:label "Rijksinstituut voor Volksgezondheid en Milieu (Netherlands)"@nl .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RSK-001
+:RSK-001 rdf:type owl:NamedIndividual ,
+                  :MalfunctionRisk ;
+         :imdrfCode "A0101" ;
+         :probability "Low" ;
+         :severity "Critical" ;
+         rdfs:label "Device failure - electrical"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RSK-002
+:RSK-002 rdf:type owl:NamedIndividual ,
+                  :MalfunctionRisk ;
+         :imdrfCode "A0102" ;
+         :probability "Medium" ;
+         :severity "Critical" ;
+         rdfs:label "Device failure - mechanical"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RSK-003
+:RSK-003 rdf:type owl:NamedIndividual ,
+                  :InjuryRisk ;
+         :imdrfCode "A0201" ;
+         :probability "Low" ;
+         :severity "Critical" ;
+         rdfs:label "Thrombosis - device-related"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RSK-004
+:RSK-004 rdf:type owl:NamedIndividual ,
+                  :InjuryRisk ;
+         :imdrfCode "A0202" ;
+         :probability "Low" ;
+         :severity "Serious" ;
+         rdfs:label "Hemolysis - pump-induced"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RSK-005
+:RSK-005 rdf:type owl:NamedIndividual ,
+                  :MalfunctionRisk ;
+         :imdrfCode "A0301" ;
+         :probability "Low" ;
+         :severity "Serious" ;
+         rdfs:label "Device migration - implant"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RSK-006
+:RSK-006 rdf:type owl:NamedIndividual ,
+                  :MalfunctionRisk ;
+         :imdrfCode "A0302" ;
+         :probability "Medium" ;
+         :severity "Serious" ;
+         rdfs:label "Lead dislodgement"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RSK-007
+:RSK-007 rdf:type owl:NamedIndividual ,
+                  :InfectionRisk ;
+         :imdrfCode "A0401" ;
+         :probability "Medium" ;
+         :severity "Serious" ;
+         rdfs:label "Infection - device-related"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RSK-009
+:RSK-009 rdf:type owl:NamedIndividual ,
+                  :MalfunctionRisk ;
+         :imdrfCode "A0501" ;
+         :probability "Low" ;
+         :severity "Critical" ;
+         rdfs:label "Battery depletion - premature"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RSK-010
+:RSK-010 rdf:type owl:NamedIndividual ,
+                  :SoftwareRisk ;
+         :imdrfCode "A0502" ;
+         :probability "Low" ;
+         :severity "Critical" ;
+         rdfs:label "Software malfunction"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RSK-011
+:RSK-011 rdf:type owl:NamedIndividual ,
+                  :RadiationRisk ;
+         :imdrfCode "A0601" ;
+         :probability "Low" ;
+         :severity "Critical" ;
+         rdfs:label "Radiation overdose"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RSK-013
+:RSK-013 rdf:type owl:NamedIndividual ,
+                  :InterferenceRisk ;
+         :imdrfCode "A0702" ;
+         :probability "Low" ;
+         :severity "Serious" ;
+         rdfs:label "Electromagnetic interference"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RSK-014
+:RSK-014 rdf:type owl:NamedIndividual ,
+                  :DiagnosticRisk ;
+         :imdrfCode "B0101" ;
+         :probability "Medium" ;
+         :severity "Serious" ;
+         rdfs:label "False positive result"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RSK-015
+:RSK-015 rdf:type owl:NamedIndividual ,
+                  :DiagnosticRisk ;
+         :imdrfCode "B0102" ;
+         :probability "Low" ;
+         :severity "Critical" ;
+         rdfs:label "False negative result"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RSK-018
+:RSK-018 rdf:type owl:NamedIndividual ,
+                  :CybersecurityRisk ;
+         :imdrfCode "B0401" ;
+         :probability "Low" ;
+         :severity "Critical" ;
+         rdfs:label "Cybersecurity vulnerability"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RSK-019
+:RSK-019 rdf:type owl:NamedIndividual ,
+                  :MaterialRisk ;
+         :imdrfCode "C0101" ;
+         :probability "Medium" ;
+         :severity "Serious" ;
+         rdfs:label "Wear debris - joint implant"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RSK-020
+:RSK-020 rdf:type owl:NamedIndividual ,
+                  :MaterialRisk ;
+         :imdrfCode "C0201" ;
+         :probability "Low" ;
+         :severity "Serious" ;
+         rdfs:label "Corrosion - metallic implant"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Spain
+:Spain rdf:type owl:NamedIndividual ,
+                :Country ;
+       rdfs:label "Spain"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Sweden
+:Sweden rdf:type owl:NamedIndividual ,
+                 :Country ;
+        rdfs:label "Sweden"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Swissmedic
+:Swissmedic rdf:type owl:NamedIndividual ,
+                     :CompetentAuthority ;
+            rdfs:label "Swissmedic"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Switzerland
+:Switzerland rdf:type owl:NamedIndividual ,
+                      :Country ;
+             rdfs:label "Switzerland"@en .
+
+
+###  http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#UnitedKingdom
+:UnitedKingdom rdf:type owl:NamedIndividual ,
+                        :Country ;
+               rdfs:label "United Kingdom"@en .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :InSituCorrection
+                :Recall
+                :SafetyAlert
+                :UserNotice
+              )
+] .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

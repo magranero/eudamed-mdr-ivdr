@@ -1,0 +1,3996 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasRiskClass"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MDRRiskClass"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasRiskClass"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#IVDRRiskClass"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#affects"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MedicalDevice"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasManufacturer"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Manufacturer"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Manufacturer"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasManufacturer"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RiskClass"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasRiskClass"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#InSituCorrection"
+    }, {
+      "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Recall"
+    }, {
+      "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#SafetyAlert"
+    }, {
+      "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#UserNotice"
+    } ]
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/Abbott_Laboratories",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-002"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/Belgium",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Belgium"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/BioMérieux",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-015"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/Biotronik",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-008"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/Boston_Scientific",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-006"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/Denmark",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Denmark"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/Dräger",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-012"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/Federal_Institute_for_Drugs_and_Medical_Devices",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#BfArM"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/France",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#France"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/GE_HealthCare",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-009"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/Germany",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Germany"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/Hologic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-014"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/Italy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Italy"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/LivaNova",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-011"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/Medicines_and_Healthcare_products_Regulatory_Agency",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MHRA"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/Medtronic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-001"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/Netherlands",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Netherlands"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/Philips",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-004"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/Poland",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Poland"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/Republic_of_Ireland",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Ireland"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/Roche_Diagnostics",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-005"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/Siemens_Healthineers",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-003"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/Spain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Spain"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/Stryker_Corporation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-007"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/Sweden",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Sweden"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/Switzerland",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Switzerland"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/United_Kingdom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#UnitedKingdom"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/resource/Zimmer_Biomet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-010"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/issued",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "Estudiante UOC – PEC2 Representación del Conocimiento"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "es",
+    "@value" : "Ontología semántica para el catálogo europeo de dispositivos médicos de alto riesgo (MDR, Regulation EU 2017/745) y de dispositivos de diagnóstico in vitro (IVDR, Regulation EU 2017/746). Modela dispositivos, fabricantes, clases de riesgo, riesgos identificados según IMDRF, incidentes notificados y acciones correctivas de seguridad en campo (FSCA) tal y como se registran en la base de datos EUDAMED."
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2026-04-15"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "EUDAMED MDR/IVDR Device Catalogue Ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Ontology IRI: http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "0.1.0"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#AFMPS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#CompetentAuthority"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "Agence fédérale des médicaments et des produits de santé (Belgium)"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ANSM",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#CompetentAuthority"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "Agence nationale de sécurité du médicament (France)"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ActiveDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Dispositivo médico que depende de una fuente de energía distinta de la generada directamente por el cuerpo humano o la gravedad."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Active Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MedicalDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ActiveImplant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Implante activo en el sentido del MDR, anexo VIII regla 8: dispositivo activo destinado a introducirse total o parcialmente en el cuerpo humano y permanecer tras la intervención."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Active Implant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ImplantableActiveDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Belgium",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Belgium"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#BfArM",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#CompetentAuthority"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Autoridad competente alemana para dispositivos médicos."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Bundesinstitut für Arzneimittel und Medizinprodukte"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ClassA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#IVDRRiskClass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Clase de riesgo A bajo IVDR: riesgo bajo individual y para la salud pública."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Class A (IVDR)"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ClassB",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#IVDRRiskClass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Clase de riesgo B bajo IVDR."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Class B (IVDR)"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ClassC",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#IVDRRiskClass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Clase de riesgo C bajo IVDR."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Class C (IVDR)"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ClassD",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#HighRiskClassCategory"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#IVDRRiskClass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Clase de riesgo D bajo IVDR: riesgo más alto tanto individual como para la salud pública."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Class D (IVDR)"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ClassI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MDRRiskClass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Clase de riesgo I bajo MDR: riesgo bajo."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Class I (MDR)"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ClassIII",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#HighRiskClassCategory"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MDRRiskClass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Clase de riesgo III bajo MDR: riesgo alto."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Class III (MDR)"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ClassIIa",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MDRRiskClass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Clase de riesgo IIa bajo MDR: riesgo medio-bajo."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Class IIa (MDR)"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ClassIIb",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MDRRiskClass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Clase de riesgo IIb bajo MDR: riesgo medio-alto."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Class IIb (MDR)"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#CompetentAuthority",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Autoridad nacional responsable de la supervisión de los dispositivos médicos comercializados en un Estado miembro."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Competent Authority"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RegulatedEntity"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ContaminationRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Riesgo de contaminación del producto o de sus reactivos."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Contamination Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Risk"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#CorrectiveAction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Acción correctiva de seguridad en campo (FSCA) emprendida por el fabricante para reducir el riesgo asociado a un dispositivo comercializado."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Field Safety Corrective Action"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RegulatedEntity"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Country",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Estado en el que opera un fabricante, se notifica un incidente o se ve afectada una acción correctiva."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://dbpedia.org/resource/Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RegulatedEntity"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#CybersecurityRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Riesgo derivado de vulnerabilidades de ciberseguridad del dispositivo."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Cybersecurity Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Risk"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#deviceName" : [ {
+    "@value" : "HeartMate 3 LVAD"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasManufacturer" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-001"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasRiskClass" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ClassIII"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#intendedPurpose" : [ {
+    "@value" : "Ventricular assist device for end-stage heart failure"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isActive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isImplantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isIvd" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isReusable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#regulatedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MDR"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#udiDi" : [ {
+    "@value" : "(01)00380740009095"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ImplantableActiveDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "HeartMate 3 LVAD"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-002",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#deviceName" : [ {
+    "@value" : "Micra AV Transcatheter Pacing System"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasManufacturer" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-001"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasRiskClass" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ClassIII"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#intendedPurpose" : [ {
+    "@value" : "Leadless cardiac pacemaker for atrioventricular synchrony"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isActive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isImplantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isIvd" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isReusable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#regulatedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MDR"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#udiDi" : [ {
+    "@value" : "(01)00380740009112"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ActiveImplant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Micra AV Transcatheter Pacing System"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-003",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#deviceName" : [ {
+    "@value" : "Portico Transcatheter Heart Valve"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasManufacturer" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-002"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasRiskClass" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ClassIII"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#intendedPurpose" : [ {
+    "@value" : "Transcatheter aortic valve replacement (TAVI)"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isActive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isImplantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isIvd" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isReusable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#regulatedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MDR"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#udiDi" : [ {
+    "@value" : "(01)00800002222291"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ImplantableDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Portico Transcatheter Heart Valve"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-004",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#deviceName" : [ {
+    "@value" : "SYNERGY Stent System"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasManufacturer" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-006"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasRiskClass" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ClassIIb"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#intendedPurpose" : [ {
+    "@value" : "Drug-eluting coronary stent"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isActive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isImplantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isIvd" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isReusable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#regulatedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MDR"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#udiDi" : [ {
+    "@value" : "(01)08714729002817"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ImplantableActiveDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SYNERGY Stent System"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-005",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#deviceName" : [ {
+    "@value" : "ACUITY X4 Quadripolar LV Lead"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasManufacturer" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-006"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasRiskClass" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ClassIII"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#intendedPurpose" : [ {
+    "@value" : "Cardiac resynchronization therapy lead"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isActive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isImplantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isIvd" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isReusable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#regulatedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MDR"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#udiDi" : [ {
+    "@value" : "(01)08714729004873"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ActiveImplant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ACUITY X4 Quadripolar LV Lead"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-006",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#deviceName" : [ {
+    "@value" : "STELLAREX Drug-Coated Balloon"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasManufacturer" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-004"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasRiskClass" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ClassIIb"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#intendedPurpose" : [ {
+    "@value" : "Peripheral artery drug-coated angioplasty balloon"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isActive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isImplantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isIvd" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isReusable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#regulatedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MDR"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#udiDi" : [ {
+    "@value" : "(01)08718998000001"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#SingleUseDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "STELLAREX Drug-Coated Balloon"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-007",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#deviceName" : [ {
+    "@value" : "ACUSON Sequoia Ultrasound"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasManufacturer" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-003"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasRiskClass" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ClassIIa"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#intendedPurpose" : [ {
+    "@value" : "Diagnostic ultrasound imaging system"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isActive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isImplantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isIvd" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isReusable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#regulatedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MDR"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#udiDi" : [ {
+    "@value" : "(01)04054839450001"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ActiveDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ACUSON Sequoia Ultrasound"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-008",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#deviceName" : [ {
+    "@value" : "MAGNETOM Vida MRI System"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasManufacturer" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-003"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasRiskClass" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ClassIIa"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#intendedPurpose" : [ {
+    "@value" : "Magnetic resonance imaging system 3T"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isActive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isImplantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isIvd" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isReusable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#regulatedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MDR"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#udiDi" : [ {
+    "@value" : "(01)04054839460002"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ActiveDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "MAGNETOM Vida MRI System"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-009",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#deviceName" : [ {
+    "@value" : "Persona Knee System"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasManufacturer" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-010"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasRiskClass" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ClassIII"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#intendedPurpose" : [ {
+    "@value" : "Total knee arthroplasty implant system"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isActive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isImplantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isIvd" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isReusable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#regulatedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MDR"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#udiDi" : [ {
+    "@value" : "(01)07612345001001"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ImplantableDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Persona Knee System"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-010",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#deviceName" : [ {
+    "@value" : "TRITON Total Hip System"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasManufacturer" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-007"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasRiskClass" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ClassIII"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#intendedPurpose" : [ {
+    "@value" : "Ceramic-on-ceramic total hip replacement"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isActive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isImplantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isIvd" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isReusable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#regulatedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MDR"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#udiDi" : [ {
+    "@value" : "(01)09876543002002"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ImplantableDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "TRITON Total Hip System"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-011",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#deviceName" : [ {
+    "@value" : "Iluvien Intravitreal Implant"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasManufacturer" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-011"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasRiskClass" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ClassIII"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#intendedPurpose" : [ {
+    "@value" : "Sustained-release fluocinolone acetonide ocular implant"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isActive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isImplantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isIvd" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isReusable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#regulatedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MDR"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#udiDi" : [ {
+    "@value" : "(01)05391520001011"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ActiveImplant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Iluvien Intravitreal Implant"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-012",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#deviceName" : [ {
+    "@value" : "Viva Cardiac Resynchronization Defibrillator"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasManufacturer" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-008"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasRiskClass" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ClassIII"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#intendedPurpose" : [ {
+    "@value" : "Cardiac resynchronization therapy with defibrillation"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isActive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isImplantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isIvd" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isReusable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#regulatedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MDR"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#udiDi" : [ {
+    "@value" : "(01)04012099001012"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ActiveImplant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Viva Cardiac Resynchronization Defibrillator"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-013",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#deviceName" : [ {
+    "@value" : "ATERA Mechanical Ventilator"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasManufacturer" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-012"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasRiskClass" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ClassIIb"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#intendedPurpose" : [ {
+    "@value" : "ICU mechanical ventilator with pressure and volume modes"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isActive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isImplantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isIvd" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isReusable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#regulatedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MDR"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#udiDi" : [ {
+    "@value" : "(01)04046539001013"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ActiveDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ATERA Mechanical Ventilator"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-014",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#deviceName" : [ {
+    "@value" : "Lumify Portable Ultrasound"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasManufacturer" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-004"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasRiskClass" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ClassIIa"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#intendedPurpose" : [ {
+    "@value" : "Handheld point-of-care ultrasound probe"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isActive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isImplantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isIvd" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isReusable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#regulatedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MDR"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#udiDi" : [ {
+    "@value" : "(01)08718998001014"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ActiveDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Lumify Portable Ultrasound"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-015",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#deviceName" : [ {
+    "@value" : "Hemodialysis Machine 5008S"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasManufacturer" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-013"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasRiskClass" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ClassIIb"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#intendedPurpose" : [ {
+    "@value" : "High-volume online hemodiafiltration machine"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isActive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isImplantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isIvd" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isReusable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#regulatedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MDR"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#udiDi" : [ {
+    "@value" : "(01)04547597001015"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ActiveDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Hemodialysis Machine 5008S"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-016",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#deviceName" : [ {
+    "@value" : "cobas e 801 Immunoassay Analyzer"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasManufacturer" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-005"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasRiskClass" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ClassC"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#intendedPurpose" : [ {
+    "@value" : "Automated immunoassay analyzer for clinical laboratory"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isActive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isImplantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isIvd" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isReusable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#regulatedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#IVDR"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#udiDi" : [ {
+    "@value" : "(01)04015630001016"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#InVitroDiagnosticDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "cobas e 801 Immunoassay Analyzer"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-017",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#deviceName" : [ {
+    "@value" : "cobas SARS-CoV-2 RT-PCR Test"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasManufacturer" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-005"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasRiskClass" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ClassC"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#intendedPurpose" : [ {
+    "@value" : "Molecular diagnostic test for SARS-CoV-2 detection"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isActive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isImplantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isIvd" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isReusable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#regulatedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#IVDR"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#udiDi" : [ {
+    "@value" : "(01)04015630001017"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#InVitroDiagnosticDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "cobas SARS-CoV-2 RT-PCR Test"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-018",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#deviceName" : [ {
+    "@value" : "VIDAS HIV DUO Ultra"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasManufacturer" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-015"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasRiskClass" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ClassD"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#intendedPurpose" : [ {
+    "@value" : "Combined HIV Ag/Ab detection assay"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isActive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isImplantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isIvd" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isReusable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#regulatedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#IVDR"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#udiDi" : [ {
+    "@value" : "(01)03760027001018"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#InVitroDiagnosticDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "VIDAS HIV DUO Ultra"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-019",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#deviceName" : [ {
+    "@value" : "PROGENSA PCA3 Assay"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasManufacturer" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-014"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasRiskClass" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ClassC"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#intendedPurpose" : [ {
+    "@value" : "Urine-based prostate cancer diagnosis assay"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isActive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isImplantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isIvd" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isReusable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#regulatedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#IVDR"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#udiDi" : [ {
+    "@value" : "(01)07000087001019"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#InVitroDiagnosticDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "PROGENSA PCA3 Assay"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-020",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#deviceName" : [ {
+    "@value" : "Harmony Prenatal Test"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasManufacturer" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-002"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasRiskClass" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ClassD"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#intendedPurpose" : [ {
+    "@value" : "Non-invasive prenatal testing (NIPT) for aneuploidies"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isActive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isImplantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isIvd" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isReusable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#regulatedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#IVDR"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#udiDi" : [ {
+    "@value" : "(01)00800002001020"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#InVitroDiagnosticDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Harmony Prenatal Test"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-021",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#deviceName" : [ {
+    "@value" : "OPTIGA Glucose Monitoring System"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasManufacturer" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-009"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasRiskClass" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ClassC"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#intendedPurpose" : [ {
+    "@value" : "Continuous glucose monitor for patients with diabetes"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isActive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isImplantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isIvd" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isReusable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#regulatedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#IVDR"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#udiDi" : [ {
+    "@value" : "(01)07300000001021"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#SelfTestDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "OPTIGA Glucose Monitoring System"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-022",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#deviceName" : [ {
+    "@value" : "BeneVision N1 Patient Monitor"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasManufacturer" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-009"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasRiskClass" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ClassIIa"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#intendedPurpose" : [ {
+    "@value" : "Portable patient monitor for vital signs"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isActive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isImplantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isIvd" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isReusable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#regulatedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MDR"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#udiDi" : [ {
+    "@value" : "(01)07300000001022"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ActiveDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "BeneVision N1 Patient Monitor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-023",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#deviceName" : [ {
+    "@value" : "Tivoli II Cochlear Implant"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasManufacturer" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-008"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasRiskClass" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ClassIII"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#intendedPurpose" : [ {
+    "@value" : "Active cochlear implant for sensorineural hearing loss"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isActive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isImplantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isIvd" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isReusable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#regulatedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MDR"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#udiDi" : [ {
+    "@value" : "(01)04012099001023"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ActiveImplant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Tivoli II Cochlear Implant"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-024",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#deviceName" : [ {
+    "@value" : "Infusion Pump Plum 360"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasManufacturer" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-002"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasRiskClass" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ClassIIb"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#intendedPurpose" : [ {
+    "@value" : "Large volume infusion pump with drug library"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isActive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isImplantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isIvd" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isReusable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#regulatedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MDR"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#udiDi" : [ {
+    "@value" : "(01)00800002001024"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ActiveDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Infusion Pump Plum 360"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-025",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#deviceName" : [ {
+    "@value" : "ValveXpert Transcatheter Mitral Valve"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasManufacturer" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-011"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasRiskClass" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ClassIII"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#intendedPurpose" : [ {
+    "@value" : "Transcatheter mitral valve replacement system"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isActive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isImplantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isIvd" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isReusable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#regulatedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MDR"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#udiDi" : [ {
+    "@value" : "(01)05391520001025"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ImplantableDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ValveXpert Transcatheter Mitral Valve"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Denmark",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Denmark"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DiagnosticRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Riesgo específico de dispositivos IVD: falsos positivos, falsos negativos, reactividad cruzada, etc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Diagnostic Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Risk"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#FSCA-001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#actionDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-02-01"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#devicesAffected" : [ {
+    "@value" : "850"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#fscaStatus" : [ {
+    "@value" : "Open"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#SafetyAlert"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "HeartMate 3 anticoagulation protocol safety alert"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#FSCA-002",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#actionDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-02-28"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#closureDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-05-31"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#devicesAffected" : [ {
+    "@value" : "1240"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#fscaStatus" : [ {
+    "@value" : "Closed"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Recall"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Recall Micra AV lots 2022-09 / 2023-03"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#FSCA-008",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#actionDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-06-05"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#closureDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-08-15"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#devicesAffected" : [ {
+    "@value" : "180"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#fscaStatus" : [ {
+    "@value" : "Closed"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Recall"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ATERA ventilator software recall"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#FSCA-010",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#actionDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-06-30"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#closureDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-08-31"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#devicesAffected" : [ {
+    "@value" : "12500"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#fscaStatus" : [ {
+    "@value" : "Closed"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Recall"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "cobas SARS-CoV-2 reagent lots recall"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#FSCA-012",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#actionDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-08-20"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#closureDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-10-31"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#devicesAffected" : [ {
+    "@value" : "2870"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#fscaStatus" : [ {
+    "@value" : "Closed"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Recall"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Plum 360 infusion pump recall"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#FSCA-015",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#actionDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-10-01"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#devicesAffected" : [ {
+    "@value" : "890"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#fscaStatus" : [ {
+    "@value" : "Open"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#InSituCorrection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "5008S cybersecurity patch"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#France",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "France"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Germany",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Germany"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#HPRA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#CompetentAuthority"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Autoridad competente irlandesa para dispositivos médicos."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Health Products Regulatory Authority (Ireland)"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#HighRiskClassCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Metacategoría que agrupa las clases de riesgo más altas (ClassIII en MDR, ClassD en IVDR) y que se usa como disparador de la regla SWRL de HighRiskDevice."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "High Risk Class Category"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RiskClass"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#HighRiskDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Clase inferida que agrupa los dispositivos con clase de riesgo más alta (ClassIII bajo MDR o ClassD bajo IVDR). Se puebla mediante regla SWRL."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "High Risk Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MedicalDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#INC-001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#affects" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-001"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#eventDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-01-08"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasCorrectiveAction" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#FSCA-001"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#incidentDescription" : [ {
+    "@value" : "Patient implanted with HeartMate 3 LVAD developed ischemic stroke 6 months post-implant. Device thrombus confirmed by echocardiography."
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#reportDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-01-15"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#reportedInCountry" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Germany"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#triggeredBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RSK-003"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#SeriousIncident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Embolic stroke – HeartMate 3"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#INC-002",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#affects" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-002"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#eventDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-01-29"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasCorrectiveAction" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#FSCA-002"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#incidentDescription" : [ {
+    "@value" : "Micra AV pacemaker reached elective replacement indicator 14 months earlier than expected longevity specification."
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#reportDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-02-03"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#reportedInCountry" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#France"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#triggeredBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RSK-009"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#SeriousIncident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Premature battery depletion – Micra AV"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#INC-003",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#affects" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-003"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#eventDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-02-15"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#incidentDescription" : [ {
+    "@value" : "Portico valve showed paravalvular leak grade III due to partial migration 2 weeks post-TAVI procedure."
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#reportDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-02-20"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#reportedInCountry" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Italy"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#triggeredBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RSK-005"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#SeriousIncident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Paravalvular leak – Portico THV"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#INC-004",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#affects" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-004"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#eventDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-02-28"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#incidentDescription" : [ {
+    "@value" : "SYNERGY stent fracture detected on angiography 18 months post-implant causing in-stent restenosis."
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#reportDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-03-05"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#reportedInCountry" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Spain"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#triggeredBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RSK-002"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#SeriousIncident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Stent fracture – SYNERGY"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#INC-010",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#affects" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-013"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#eventDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-05-19"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasCorrectiveAction" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#FSCA-008"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#incidentDescription" : [ {
+    "@value" : "ATERA ventilator software version 2.1.3 delivered FiO2 6% lower than set value for patients in ARDS protocol."
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#reportDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-05-20"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#reportedInCountry" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Germany"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#triggeredBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RSK-010"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#SeriousIncident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ATERA ventilator – FiO2 delivery error"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#INC-012",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#affects" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-017"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#eventDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-06-10"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasCorrectiveAction" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#FSCA-010"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#incidentDescription" : [ {
+    "@value" : "cobas SARS-CoV-2 assay failed to detect Omicron BA.2.86 subvariant in 7 samples confirmed positive by sequencing."
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#reportDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-06-15"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#reportedInCountry" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Spain"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#triggeredBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RSK-015"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#SeriousIncident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "cobas SARS-CoV-2 – false negative"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#INC-015",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#affects" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-024"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#eventDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-08-04"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasCorrectiveAction" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#FSCA-012"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#incidentDescription" : [ {
+    "@value" : "Plum 360 infusion pump delivered 10x heparin dose due to software decimal point error in drug library version 4.2.1."
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#reportDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-08-05"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#reportedInCountry" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Italy"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#triggeredBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RSK-010"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#SeriousIncident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Plum 360 – decimal point error"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#INC-018",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#affects" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-015"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#eventDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-09-12"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasCorrectiveAction" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#FSCA-015"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#incidentDescription" : [ {
+    "@value" : "5008S hemodialysis machine web interface exposed to hospital internal network."
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#reportDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-09-15"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#reportedInCountry" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Germany"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#triggeredBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RSK-018"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#SeriousIncident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "5008S hemodialysis – cybersecurity"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#INC-019",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#affects" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DEV-023"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#eventDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-09-28"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#incidentDescription" : [ {
+    "@value" : "Tivoli II cochlear implant failed to respond to initial activation programming."
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#reportDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-10-01"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#reportedInCountry" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Sweden"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#triggeredBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RSK-001"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#NearMissIncident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Tivoli II cochlear – activation failure"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#IVDR",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#IVDRFramework"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Reglamento europeo sobre productos sanitarios para diagnóstico in vitro."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "IVDR – Regulation (EU) 2017/746"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://data.europa.eu/eli/reg/2017/746/oj"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#IVDRFramework",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Regulation (EU) 2017/746 on in vitro diagnostic medical devices."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "IVDR Framework"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RegulatoryFramework"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#IVDRRiskClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Clase de riesgo bajo el reglamento IVDR (A, B, C, D)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "IVDR Risk Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RiskClass"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MDRRiskClass"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ImplantableActiveDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Dispositivo que es a la vez implantable y activo. Intersección de ActiveDevice e ImplantableDevice."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Implantable Active Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ActiveDevice"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ImplantableDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ImplantableDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Dispositivo diseñado para ser introducido total o parcialmente en el cuerpo humano mediante intervención quirúrgica y permanecer allí tras dicho procedimiento."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Implantable Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MedicalDevice"
+  }, {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#InSituCorrection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Corrección del dispositivo en el centro de uso (actualización software, cambio de consumible, reentrenamiento…)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "In Situ Correction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#CorrectiveAction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#InVitroDiagnosticDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Dispositivo destinado a examinar muestras procedentes del cuerpo humano con fines diagnósticos, según el reglamento IVDR (EU 2017/746)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "In Vitro Diagnostic Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://dbpedia.org/resource/Medical_test"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MedicalDevice"
+  }, {
+    "@id" : "_:genid2"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Incident",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Evento adverso asociado a un dispositivo médico que es notificado a las autoridades regulatorias a través de EUDAMED."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RegulatedEntity"
+  }, {
+    "@id" : "_:genid3"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#InfectionRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Riesgo de infección asociado al uso o implantación del dispositivo."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Infection Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Risk"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#InjuryRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Riesgo de daño directo al paciente."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Injury Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Risk"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#InterferenceRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Riesgo por interferencias electromagnéticas o artefactos producidos por el dispositivo."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Interference Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Risk"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Ireland",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Ireland"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Italy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Italy"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#authorizationNumber" : [ {
+    "@value" : "IE/2017/001234"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#contactEmail" : [ {
+    "@value" : "regulatory@medtronic.com"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#eudamedSRN" : [ {
+    "@value" : "SRN-IE-MED-0001"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#locatedInCountry" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Ireland"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#supervisedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#HPRA"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Fabricante irlandés líder mundial en tecnología médica, especializado en dispositivos cardiovasculares, neurológicos y diabéticos."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Medtronic plc"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://dbpedia.org/resource/Medtronic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-002",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#authorizationNumber" : [ {
+    "@value" : "DE/2017/005678"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#contactEmail" : [ {
+    "@value" : "regulatory@abbott.com"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#eudamedSRN" : [ {
+    "@value" : "SRN-DE-MED-0002"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#locatedInCountry" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Germany"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#supervisedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#BfArM"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Abbott Medical Devices"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-003",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#authorizationNumber" : [ {
+    "@value" : "DE/2017/009012"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#contactEmail" : [ {
+    "@value" : "regulatory@siemens-healthineers.com"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#eudamedSRN" : [ {
+    "@value" : "SRN-DE-MED-0003"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#locatedInCountry" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Germany"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#supervisedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#BfArM"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Siemens Healthineers AG"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-004",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#authorizationNumber" : [ {
+    "@value" : "NL/2017/003456"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#contactEmail" : [ {
+    "@value" : "regulatory@philips.com"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#eudamedSRN" : [ {
+    "@value" : "SRN-NL-MED-0004"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#locatedInCountry" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Netherlands"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#supervisedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RIVM"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Philips Medical Systems"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-005",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#authorizationNumber" : [ {
+    "@value" : "DE/2017/007890"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#contactEmail" : [ {
+    "@value" : "regulatory@roche.com"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#eudamedSRN" : [ {
+    "@value" : "SRN-DE-MED-0005"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#locatedInCountry" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Germany"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#supervisedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#BfArM"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "División diagnóstica de Hoffmann-La Roche, fabricante de referencia en diagnóstico in vitro e inmunoanálisis clínico."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Roche Diagnostics GmbH"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://dbpedia.org/resource/Roche_Diagnostics"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-006",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#authorizationNumber" : [ {
+    "@value" : "IE/2017/002345"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#contactEmail" : [ {
+    "@value" : "regulatory@bsci.com"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#eudamedSRN" : [ {
+    "@value" : "SRN-IE-MED-0006"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#locatedInCountry" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Ireland"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#supervisedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#HPRA"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Boston Scientific Corporation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-007",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#authorizationNumber" : [ {
+    "@value" : "NL/2017/006789"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#contactEmail" : [ {
+    "@value" : "regulatory@stryker.com"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#eudamedSRN" : [ {
+    "@value" : "SRN-NL-MED-0007"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#locatedInCountry" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Netherlands"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#supervisedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RIVM"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Stryker Corporation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-008",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#authorizationNumber" : [ {
+    "@value" : "DE/2017/004567"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#contactEmail" : [ {
+    "@value" : "regulatory@biotronik.com"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#eudamedSRN" : [ {
+    "@value" : "SRN-DE-MED-0008"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#locatedInCountry" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Germany"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#supervisedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#BfArM"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Biotronik SE & Co. KG"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-009",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#authorizationNumber" : [ {
+    "@value" : "SE/2017/008901"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#contactEmail" : [ {
+    "@value" : "regulatory@gehealthcare.com"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#eudamedSRN" : [ {
+    "@value" : "SRN-SE-MED-0009"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#locatedInCountry" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Sweden"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#supervisedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MPA"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "GE HealthCare Technologies"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-010",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#authorizationNumber" : [ {
+    "@value" : "CH/2017/001122"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#contactEmail" : [ {
+    "@value" : "regulatory@zimmerbiomet.com"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#eudamedSRN" : [ {
+    "@value" : "SRN-CH-MED-0010"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#locatedInCountry" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Switzerland"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#supervisedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Swissmedic"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Zimmer Biomet Holdings"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-011",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#authorizationNumber" : [ {
+    "@value" : "UK/2017/003344"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#contactEmail" : [ {
+    "@value" : "regulatory@livanova.com"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#eudamedSRN" : [ {
+    "@value" : "SRN-UK-MED-0011"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#locatedInCountry" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#UnitedKingdom"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#supervisedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MHRA"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Fabricante británico especializado en tecnología cardiovascular y neuromoduladora."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "LivaNova PLC"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://dbpedia.org/resource/LivaNova"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-012",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#authorizationNumber" : [ {
+    "@value" : "DE/2017/005566"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#contactEmail" : [ {
+    "@value" : "regulatory@draeger.com"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#eudamedSRN" : [ {
+    "@value" : "SRN-DE-MED-0012"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#locatedInCountry" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Germany"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#supervisedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#BfArM"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Drägerwerk AG & Co. KGaA"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-013",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#authorizationNumber" : [ {
+    "@value" : "FR/2017/007788"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#contactEmail" : [ {
+    "@value" : "regulatory@nipro.com"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#eudamedSRN" : [ {
+    "@value" : "SRN-FR-MED-0013"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#locatedInCountry" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#France"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#supervisedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ANSM"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Nipro Corporation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-014",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#authorizationNumber" : [ {
+    "@value" : "BE/2017/009900"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#contactEmail" : [ {
+    "@value" : "regulatory@hologic.com"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#eudamedSRN" : [ {
+    "@value" : "SRN-BE-MED-0014"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#locatedInCountry" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Belgium"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#supervisedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#AFMPS"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Hologic Inc."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MAN-015",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#authorizationNumber" : [ {
+    "@value" : "FR/2017/002211"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#contactEmail" : [ {
+    "@value" : "regulatory@biomerieux.com"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#eudamedSRN" : [ {
+    "@value" : "SRN-FR-MED-0015"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#locatedInCountry" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#France"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#supervisedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#ANSM"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "bioMérieux SA"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MDR",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MDRFramework"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Reglamento europeo sobre productos sanitarios."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "MDR – Regulation (EU) 2017/745"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://data.europa.eu/eli/reg/2017/745/oj"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MDRFramework",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Regulation (EU) 2017/745 on medical devices."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "MDR Framework"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RegulatoryFramework"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MDRRiskClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Clase de riesgo bajo el reglamento MDR (I, IIa, IIb, III)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "MDR Risk Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RiskClass"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MHRA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#CompetentAuthority"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Medicines and Healthcare products Regulatory Agency (UK)"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MPA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#CompetentAuthority"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "sv",
+    "@value" : "Läkemedelsverket (Sweden)"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MalfunctionRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Riesgo derivado del mal funcionamiento del dispositivo (eléctrico, mecánico, de rendimiento, etc.)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Malfunction Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Risk"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Manufacturer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Persona jurídica responsable del diseño, fabricación, envasado y etiquetado de un dispositivo antes de su comercialización bajo su propio nombre."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://dbpedia.org/resource/Manufacturing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RegulatedEntity"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MaterialRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Riesgo derivado de los materiales del dispositivo (desgaste, corrosión, toxicidad)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Material Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Risk"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MedicalDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Dispositivo médico registrado en EUDAMED. Cualquier instrumento, aparato o software destinado a un uso médico según los reglamentos MDR o IVDR."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Medical Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://dbpedia.org/resource/Medical_device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RegulatedEntity"
+  }, {
+    "@id" : "_:genid5"
+  }, {
+    "@id" : "_:genid6"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid4"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#NearMissIncident",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Cuasi-incidente detectado sin consecuencias finales sobre el paciente."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Near-Miss Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Incident"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#SeriousIncident"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Netherlands",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Netherlands"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Poland",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Poland"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RIVM",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#CompetentAuthority"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "nl",
+    "@value" : "Rijksinstituut voor Volksgezondheid en Milieu (Netherlands)"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RSK-001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#imdrfCode" : [ {
+    "@value" : "A0101"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#probability" : [ {
+    "@value" : "Low"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#severity" : [ {
+    "@value" : "Critical"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MalfunctionRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Device failure - electrical"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RSK-002",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#imdrfCode" : [ {
+    "@value" : "A0102"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#probability" : [ {
+    "@value" : "Medium"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#severity" : [ {
+    "@value" : "Critical"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MalfunctionRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Device failure - mechanical"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RSK-003",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#imdrfCode" : [ {
+    "@value" : "A0201"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#probability" : [ {
+    "@value" : "Low"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#severity" : [ {
+    "@value" : "Critical"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#InjuryRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Thrombosis - device-related"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RSK-004",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#imdrfCode" : [ {
+    "@value" : "A0202"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#probability" : [ {
+    "@value" : "Low"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#severity" : [ {
+    "@value" : "Serious"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#InjuryRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Hemolysis - pump-induced"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RSK-005",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#imdrfCode" : [ {
+    "@value" : "A0301"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#probability" : [ {
+    "@value" : "Low"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#severity" : [ {
+    "@value" : "Serious"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MalfunctionRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Device migration - implant"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RSK-006",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#imdrfCode" : [ {
+    "@value" : "A0302"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#probability" : [ {
+    "@value" : "Medium"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#severity" : [ {
+    "@value" : "Serious"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MalfunctionRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Lead dislodgement"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RSK-007",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#imdrfCode" : [ {
+    "@value" : "A0401"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#probability" : [ {
+    "@value" : "Medium"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#severity" : [ {
+    "@value" : "Serious"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#InfectionRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Infection - device-related"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RSK-009",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#imdrfCode" : [ {
+    "@value" : "A0501"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#probability" : [ {
+    "@value" : "Low"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#severity" : [ {
+    "@value" : "Critical"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MalfunctionRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Battery depletion - premature"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RSK-010",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#imdrfCode" : [ {
+    "@value" : "A0502"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#probability" : [ {
+    "@value" : "Low"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#severity" : [ {
+    "@value" : "Critical"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#SoftwareRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Software malfunction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RSK-011",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#imdrfCode" : [ {
+    "@value" : "A0601"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#probability" : [ {
+    "@value" : "Low"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#severity" : [ {
+    "@value" : "Critical"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RadiationRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Radiation overdose"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RSK-013",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#imdrfCode" : [ {
+    "@value" : "A0702"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#probability" : [ {
+    "@value" : "Low"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#severity" : [ {
+    "@value" : "Serious"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#InterferenceRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Electromagnetic interference"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RSK-014",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#imdrfCode" : [ {
+    "@value" : "B0101"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#probability" : [ {
+    "@value" : "Medium"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#severity" : [ {
+    "@value" : "Serious"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DiagnosticRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "False positive result"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RSK-015",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#imdrfCode" : [ {
+    "@value" : "B0102"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#probability" : [ {
+    "@value" : "Low"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#severity" : [ {
+    "@value" : "Critical"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#DiagnosticRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "False negative result"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RSK-018",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#imdrfCode" : [ {
+    "@value" : "B0401"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#probability" : [ {
+    "@value" : "Low"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#severity" : [ {
+    "@value" : "Critical"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#CybersecurityRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Cybersecurity vulnerability"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RSK-019",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#imdrfCode" : [ {
+    "@value" : "C0101"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#probability" : [ {
+    "@value" : "Medium"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#severity" : [ {
+    "@value" : "Serious"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MaterialRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Wear debris - joint implant"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RSK-020",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#imdrfCode" : [ {
+    "@value" : "C0201"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#probability" : [ {
+    "@value" : "Low"
+  } ],
+  "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#severity" : [ {
+    "@value" : "Serious"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MaterialRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Corrosion - metallic implant"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RadiationRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Riesgo asociado a la exposición inadvertida o excesiva a radiación ionizante o no ionizante."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Radiation Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Risk"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Recall",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Retirada de producto del mercado."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Recall"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#CorrectiveAction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RecalledDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Clase inferida que agrupa los dispositivos asociados a una acción correctiva de tipo Recall. Se puebla mediante regla SWRL."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Recalled Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MedicalDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RegulatedEntity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Clase raíz que agrupa cualquier entidad sujeta a los reglamentos MDR (EU 2017/745) e IVDR (EU 2017/746)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Regulated Entity"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RegulatoryFramework",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Reglamento europeo bajo el que se clasifica y vigila un dispositivo."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Regulatory Framework"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RegulatedEntity"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Risk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Riesgo identificado que puede asociarse a un tipo de dispositivo, codificado conforme a la nomenclatura IMDRF."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RegulatedEntity"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RiskClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Categoría de riesgo asignada a un dispositivo conforme al anexo correspondiente del MDR o del IVDR."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Risk Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RegulatedEntity"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#SafetyAlert",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Comunicación de seguridad sin retirada del producto."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Safety Alert"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#CorrectiveAction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#SelfTestDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Dispositivo IVD destinado a ser utilizado por personas legas en el ámbito doméstico (autodiagnóstico)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Self Test Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#InVitroDiagnosticDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#SeriousIncident",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Incidente grave que provoca, o pudo haber provocado, la muerte del paciente o un deterioro grave de su salud."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Serious Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Incident"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#SingleUseDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Dispositivo destinado a utilizarse en un único paciente durante un único procedimiento."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Single Use Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MedicalDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#SoftwareRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Riesgo relacionado con defectos del software embebido o de control del dispositivo."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Software Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Risk"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Spain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Spain"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Sweden",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Sweden"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Swissmedic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#CompetentAuthority"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Swissmedic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Switzerland",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Switzerland"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#UnitedKingdom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "United Kingdom"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#UserNotice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Notificación al usuario con instrucciones de uso actualizadas."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "User Notice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#CorrectiveAction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#actionDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Fecha en la que se inicia la FSCA."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#CorrectiveAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "action date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#affects",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Dispositivo concreto al que se refiere un incidente."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "affects"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MedicalDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#authorizationNumber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Número de autorización asignado al fabricante por la autoridad competente."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "authorization number"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#closureDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Fecha de cierre de la FSCA (si procede)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#CorrectiveAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "closure date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#contactEmail",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Correo de contacto regulatorio del fabricante."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "contact email"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#deviceName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Nombre comercial del dispositivo tal y como aparece en EUDAMED."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MedicalDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "device name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#devicesAffected",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Número (aproximado) de dispositivos alcanzados por la FSCA."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#CorrectiveAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "devices affected"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#eudamedSRN",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Single Registration Number de EUDAMED asignado al fabricante."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "EUDAMED SRN"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#eventDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Fecha en la que tuvo lugar el evento adverso."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "event date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#fscaStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Estado de la acción correctiva (Open, Closed)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#CorrectiveAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "FSCA status"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasCorrectiveAction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "FSCA derivada de un incidente."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has corrective action"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#CorrectiveAction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasIdentifiedRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Riesgo identificado que afecta a un dispositivo o a su tipología."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MedicalDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has identified risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Risk"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasManufacturer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relaciona un dispositivo con su fabricante legal. Es funcional: un dispositivo tiene un único fabricante registrado."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MedicalDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Manufacturer"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasRiskClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Clase de riesgo asignada al dispositivo (una y solo una conforme al MDR o IVDR)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MedicalDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has risk class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RiskClass"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#imdrfCode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Código IMDRF Adverse Event Terminology que identifica el riesgo."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "IMDRF code"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#incidentDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Descripción clínica del incidente."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "incident description"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#intendedPurpose",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Finalidad prevista declarada por el fabricante."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MedicalDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "intended purpose"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isActive",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Valor booleano que indica si el dispositivo es activo (requiere fuente de energía externa)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MedicalDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is active"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isImplantable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Valor booleano que indica si el dispositivo es implantable."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MedicalDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is implantable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isIvd",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Valor booleano que indica si el dispositivo es de diagnóstico in vitro."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MedicalDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is IVD"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#isReusable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Valor booleano que indica si el dispositivo se utiliza en más de un paciente o procedimiento."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MedicalDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is reusable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#locatedInCountry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "País en el que tiene sede legal el fabricante."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "located in country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Country"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#manufacturesDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Inversa de hasManufacturer."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "manufactures device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MedicalDevice"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#hasManufacturer"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#probability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Probabilidad estimada de materialización del riesgo (Low, Medium, High)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "probability"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#regulatedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Marco regulatorio bajo el que se clasifica el dispositivo (MDR o IVDR)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MedicalDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "regulated by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#RegulatoryFramework"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#reportDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Fecha en la que el incidente fue notificado a la autoridad competente."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "report date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#reportedInCountry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Estado miembro en el que se notifica el incidente."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "reported in country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Country"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#severity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Gravedad del riesgo (Moderate, Serious, Critical)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "severity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#supervisedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Autoridad competente del Estado miembro bajo cuya supervisión opera el fabricante."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "supervised by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#CompetentAuthority"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#triggeredBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Riesgo identificado que materializa el incidente."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "triggered by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#Risk"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#udiDi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Unique Device Identifier – Device Identifier (GS1 AI 01). Es único e inmutable para el modelo de dispositivo."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/eudamed-mdr-ivdr#MedicalDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "UDI-DI"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+} ]
